@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+div{
+    text-align: center;
+    
+}
+span{
+    color: greenyellow;
+}
+.inp{
+    width: 30%;
+     height:40px;
+    border-radius: 5px;
+}
+.forgetpass{
+    padding-right: 10px;
+
+}
+#btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: green;
+    border-style: none;
+    
+}
+/* p{
+    margin-left: -190px;
+} */
+/* #remember{
+    margin-left: -130px;
+
+} */
+/* .container{
+} */
+button{
+    width: 160px;
+    height: 40px;
+}
+.bn{
+    margin-right: -30px;
+    border-style: none;
+}
+.bm{
+    border-style: none;
+}
+.li{
+    /* width: 25%; */
+    height: 30px;
+    border-radius: 5px;
+}
+/* #num{
+    width: 180px;
+    height:20px;
+} */
+.pass{
+    width: 320px;
+    height:20px;
+}
+.signup{
+    width: 280px;
+    background-color: green;
+}

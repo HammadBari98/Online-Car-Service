@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Trustpilot_ratings_4halfstar-RGB" width="215" height="41" viewBox="0 0 215 41">
+    <defs>
+        <style>
+            .cls-1{fill:#00b67a}.cls-2{fill:#dcdce6}.cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_7" data-name="Group 7">
+        <path id="Rectangle-path" d="M0 0h41v41H0z" class="cls-1"/>
+        <path id="Rectangle_6" d="M0 0h40v41H0z" class="cls-1" data-name="Rectangle 6" transform="translate(44)"/>
+        <path id="Rectangle_7" d="M0 0h41v41H0z" class="cls-1" data-name="Rectangle 7" transform="translate(87)"/>
+        <path id="Rectangle_8" d="M0 0h41v41H0z" class="cls-1" data-name="Rectangle 8" transform="translate(131)"/>
+        <g id="Half" transform="translate(174.802)">
+            <path id="Rectangle_9" d="M0 0h20v41H0z" class="cls-2" data-name="Rectangle 9" transform="translate(20.198)"/>
+            <path id="Rectangle_10" d="M0 0h20v41H0z" class="cls-1" data-name="Rectangle 10" transform="translate(.198)"/>
+        </g>
+        <path id="Shape" d="M28.537 36.607l6.143-1.557 2.567 7.91zm14.138-10.225H31.861L28.537 16.2l-3.324 10.182H14.4l8.752 6.311-3.324 10.183 8.752-6.311 5.386-3.871 8.71-6.311z" class="cls-3" transform="translate(-8.341 -9.384)"/>
+        <path id="Path_11" d="M132.537 36.607l6.143-1.557 2.567 7.91zm14.137-10.224h-10.813L132.537 16.2l-3.324 10.182H118.4l8.752 6.311-3.324 10.182 8.752-6.311 5.386-3.871 8.71-6.311z" class="cls-3" data-name="Path 11" transform="translate(-68.583 -9.384)"/>
+        <path id="Path_12" d="M236.537 36.607l6.143-1.557 2.567 7.91zm14.137-10.224h-10.813L236.537 16.2l-3.324 10.182H222.4l8.752 6.311-3.324 10.182 8.752-6.311 5.386-3.871 8.71-6.311z" class="cls-3" data-name="Path 12" transform="translate(-128.825 -9.384)"/>
+        <path id="Path_13" d="M340.537 36.607l6.143-1.557 2.567 7.91zm14.137-10.224h-10.813L340.537 16.2l-3.324 10.182H326.4l8.752 6.311-3.324 10.182 8.752-6.311 5.386-3.871 8.71-6.311z" class="cls-3" data-name="Path 13" transform="translate(-189.066 -9.384)"/>
+        <path id="Path_14" d="M444.537 36.607l6.143-1.557 2.567 7.91zm14.137-10.224h-10.813L444.537 16.2l-3.324 10.182H430.4l8.752 6.311-3.324 10.182 8.752-6.311 5.386-3.871 8.71-6.311z" class="cls-3" data-name="Path 14" transform="translate(-249.308 -9.384)"/>
+    </g>
+</svg>

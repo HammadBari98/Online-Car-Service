@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Test</title>
+    <style>
+        #mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#boxes #dialog {
+  width: 750px;
+  height: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+}
+
+#popupfoot {
+  font-size: 16pt;
+  position: absolute;
+  bottom: 0px;
+  width: 250px;
+  left: 250px;
+}
+    </style>
+</head>
+<body>
+    <div id="boxes">
+        <div id="dialog" class="window">
+          Your Content Goes Here
+          <div id="popupfoot"> <a href="#" class="close agree">I agree</a> | <a class="agree"style="color:red;" href="#">I do not agree</a> </div>
+        </div>
+        <div id="mask"></div>
+      </div>
+      
+      <script src="jquery.js"></script>
+
+
+<script>$(document).ready(function() { 
+    02
+     
+    03
+    var id ='#dialog';
+    04
+       
+    05
+    //Get the screen height and width
+    06
+    var maskHeight = $(document).height();
+    07
+    var maskWidth = $(window).width();
+    08
+       
+    09
+    //Set heigth and width to mask to fill up the whole screen
+    10
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    11
+     
+    12
+    //transition effect
+    13
+    $('#mask').fadeIn(500);
+    14
+    $('#mask').fadeTo("slow",0.9); 
+    15
+       
+    16
+    //Get the window height and width
+    17
+    var winH = $(window).height();
+    18
+    var winW = $(window).width();
+    19
+                   
+    20
+    //Set the popup window to center
+    21
+    $(id).css('top',  winH/2-$(id).height()/2);
+    22
+    $(id).css('left', winW/2-$(id).width()/2);
+    23
+       
+    24
+    //transition effect
+    25
+    $(id).fadeIn(2000);  
+    26
+       
+    27
+    //if close button is clicked
+    28
+    $('.window .close').click(function (e) {
+    29
+    //Cancel the link behavior
+    30
+    e.preventDefault();
+    31
+     
+    32
+    $('#mask').hide();
+    33
+    $('.window').hide();
+    34
+    });
+    35
+     
+    36
+    //if mask is clicked
+    37
+    $('#mask').click(function () {
+    38
+    $(this).hide();
+    39
+    $('.window').hide();
+    40
+    });
+    41
+       
+    42
+    });
+    </script>
+     
+</body>
+</html>
