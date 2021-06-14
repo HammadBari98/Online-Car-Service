@@ -1,45 +1,108 @@
 <!DOCTYPE html>
-<!--[if IE]><![endif]-->
-<!--[if IE 8 ]> <html lang="en-US" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]> <html lang="en-US" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en-US" class="no-ie no-js">
-<!--<![endif]-->
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="service.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
+<!-- Main CSS File -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<title>For Garages </title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
 
-    <!-- This site is optimized with the Yoast SEO Premium plugin v14.7 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>How it works</title>
+<script>
+   
+    $(window).scroll(function(){
+$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 
-    
-
-    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
-     <!-- Plugins CSS File -->
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-     <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
-     <!-- Main CSS File -->
-     <link rel="stylesheet" href="assets/css/style.css">
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link href="service.css" rel="stylesheet">
+});
+  </script>
+      <style>
+        .navbar.scrolled{
+        background-color: #fff !important;
+      }
+     .dropdown {
+         position: static !important;
+     }
      
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-     <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
-     <!-- Main CSS File -->
-     <link rel="stylesheet" href="assets/css/style.css">
-     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/7a3747215c.js"></script>
+     .dropdown-menu {
+         border: 0px;
+         margin-top: 0px !important;
+         width: 100% !important;
+     }
+     @media only screen and (max-width:768px)
+     {        
+     .navbar{
+     background-color: #fff !important;
+     color: black !important;
+     }   
 
+     .dropdown-item {
+         font-size: 12px !important;
+       margin-left: 500px;
+     }
+     .dropdown-menu {
+
+        margin-left: -500px !important;
+     
+     }}
+     @media only screen and (max-width:560px){
+        .dropdown-menu {
+
+margin-left: -800px !important;
+
+}
+     }
+     @media only screen and (max-width:425px){
+        .dropdown-menu {
+
+margin-left: -750px !important;
+
+}
+     }
+     @media only screen and (max-width:280px){
+        .dropdown-menu {
+
+margin-left: -1500px !important;
+
+}
+     }
+     @media only screen and (max-width:320px){
+        .dropdown-menu {
+
+margin-left: -1000px !important;
+
+}
+     }
+     @media only screen and (max-width:360px){
+        .dropdown-menu {
+
+margin-left: -890px !important;
+
+}
+     }
+     @media only screen and (max-width:414px){
+        .dropdown-menu {
+
+margin-left: -930px !important;
+
+}
+     }
+ </style>
 
     <style type="text/css">
   
@@ -82,6 +145,10 @@
                font-size: 16px;
                box-shadow: 0 2px 4px 0 rgb(0 0 0 / 24%);
         }
+        .bb{
+            z-index: -1 !important;
+            margin-top:0px !important;
+        }
 
       
   
@@ -110,15 +177,22 @@
             background-color: green;
             border: 3px solid green;
         }
-
-        @media only screen and (max-width: 768px) {
-            .reviews {
-                width: 30% !important;
-                height: 33% !important;
-                margin-left: 30% !important;
-                margin-top: 5px;
+        @media only screen and (max-width: 345px) {
+            .bb{
+                height: 1500px !important;
             }
-
+            .reviews{
+                width: 100% !important;
+            }
+        }
+      
+        @media only screen and (max-width: 768px) {
+           
+.reviews {
+    
+    height: auto !important;
+    margin-left: -3% !important;
+}
             .bb {
                 height: 1400px !important;
             }
@@ -151,64 +225,177 @@
    p,h5{
        color: white;
    }
-   a{
-      
-   }
+  
   
   
         
     </style>
 
 </head>
-<body>
-    <div class="navigation-wrap bg-light start-header start-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                    
-                        <a class="navbar-brand" href="index.html" target="_blank"><img src="imgs/logo.png" style="width: 90px !important; height: 70px !important;" alt=""></a>	
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="allService.html">Find Garage</a>
-                                </li>
-                                                            
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="How it works.html">How It Works</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="forGarages.html">For Garages
-                                    </a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="signUp.html">Sign up
-                                    </a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="login.html">Log In</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="login.html">
-                                    <button type="button" class="btn btn-outline-dark">Retrieve Quotes</button>
-                                    </a>
-                                </li>
-                            </ul>
+<body >
+
+    <div class="fluid-container">
+        <center>
+            
+            <nav class="navbar navbar-expand-lg navbar-tra
+            justify-content-between text-white fixed-top"
+    style="background: transparent;">
+    <a class="navbar-brand" href="index.html">
+        <img src="logo.png"
+            width="90" height="70"
+            class="d-inline-block align-top" alt="">
+    
+    </a>
+    <button class="navbar-toggler "
+            type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown01"
+            aria-controls="navbarNavDropdown01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="outline-color:#244b67 !important;">
+            <i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #244b67;"></i>
+    </button>
+
+    <div class="collapse navbar-collapse"
+        id="navbarNavDropdown01">
+<ul class="navbar-nav mr-auto"> </ul>
+        <ul class="navbar-nav ">
+            
+            <!--dropdown item of menu-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false" style="color: chartreuse">
+                 <b>Find Garages</b>
+                </a>
+                <!--dropdown sub items of menu-->
+                <div class="dropdown-menu"
+                    aria-labelledby="navbarDropdown">
+                    <div class="container">
+                      <h5> Best Garages For</h5>
+                    <div class="row"style="display: flex;">
+                        <div class="col-12 col-sm-12 col-md-3" ">
+                           
+                           <a class="dropdown-item" href="mobileMechanic.html"style="display: flex;">
+                            <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+                                &nbsp;&nbsp;
+                             Mobile Mechanic
+                           </a> 
                         </div>
-                        
-                    </nav>		
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="cambeltChange.html" style="display: flex;"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+
+                            &nbsp;&nbsp;
+                            Cambelt Change
+                           </a> 
+                        </div>
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="brake&Disc.html"style="display: flex;"> <img src="imgs/AllService/brake-pads-discs.svg" width="22px" alt="">
+
+                            &nbsp;&nbsp;
+                            Brake Pads and Discs
+                           </a> 
+                        </div>
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="Aircon.html"style="display: flex;"> <img src="imgs/AllService/icon-heatingCooling.svg"width="22px">
+                            &nbsp;&nbsp;
+                            Aircon Regas
+                           </a> 
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="Diagnostic.html"style="display: flex;"> <img src="imgs/AllService/icon-diagnostics.svg" width="22px" alt="">
+
+                            &nbsp;&nbsp;
+                            Diagnostics
+                           </a> 
+                        </div>
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="fullService.html"style="display: flex;"> <img src="imgs/AllService/full-service-icon.svg" width="22px" alt="">
+                            &nbsp;&nbsp;
+                             
+                            Full Service
+                           </a> 
+                        </div>
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="OilChnage.html"style="display: flex;"> <img src="imgs/AllService/oil-change.svg" width="22px" alt="">
+
+                            &nbsp;&nbsp;
+                            Oil Change
+                           </a> 
+                        </div>
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="MobileTyreFitting.html"style="display: flex;"> <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                            &nbsp;&nbsp;
+                            Mobile Tyre Fitting
+                           </a> 
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="shockAbsorber.html"style="display: flex;"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+                            &nbsp;&nbsp;
+                             
+                            Shock Absorber Repair
+                           </a> 
+                        </div>
+                         <div class="col-12 col-sm-12 col-md-3">
+                           <a class="dropdown-item" href="turboFault.html"style="display: flex;"> <img src="imgs/AllService/icon-heatingCooling.svg" width="22px" alt="">
+
+                            &nbsp;&nbsp;
+                            Turbo Faults and Replacement
+                           </a> 
+                        </div>
+                         
+                    </div>
+                     
+                   <br> <a href="allService.html"> <h6 style="font-weight: 700; color: #244b67;">View All Repairs</h6></a>
+                    </div>
+                    
+                   
                 </div>
-            </div>
-        </div>
+            </li>
+            <li> <a class="nav-link"
+              href="forGarages.html" style="color: chartreuse;">
+               <b>For Garages</b>
+              </a>
+          </li>
+            <li> <a class="nav-link"
+                href="How it works.html" style="color: chartreuse;">
+                 <b>How It Works</b>
+                </a>
+            </li>
+            <li> <a class="nav-link"
+                href="signUp.html" style="color: chartreuse">
+                 <b>Sign Up</b>
+                </a>
+            </li>
+            <li> <a class="nav-link"
+                href="login.html" style="color: chartreuse">
+                 <b>Log In</b>
+                </a>
+            </li>
+            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="login.html">
+                    <button type="button" class="btn btn-primary" style="background-color: rgb(52, 66, 255); border-radius: 10px; ">Retrieve Quotes</button>
+                    </a>
+                </li>
+            
+        </ul>
+        
+    
     </div>
-<br><br><br><br><br>
-<div class="container-fluid bb"
-    style="  background-image:url(background.jpg); width: 100%; min-height:500px ; background-size: cover; background-repeat: no-repeat; ">
+</nav>
+        </center>
+    </div>
+    
+
+<div class="container-fluid bb" style=" background-image:url(background.jpg); width: 100%; min-height:700px ; background-size: cover; background-repeat: no-repeat;  ">
+   
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <div style="margin-left:10% ;">
@@ -226,32 +413,32 @@
                         Just tell us what work you require and where you live, and we'll send quotes from friendly local
                         specialists straight to your inbox.
                         You can compare prices, reviews and location, and even book in online. Click here to get started
-                        now.</p>
+                        now.</p> <br>
                 </div>
 
             </div>
             <div class="row" style="margin-left:10%;">
-                <input type="text" value="Enter Your Reg" class="w-50">
+                <input type="text" placeholder="Enter Your Reg" class="w-50">
                 <button class="btn" id="get"><b>Get Quotes</b></button>
             </div>
 
         </div>
         <br>
         <div class="col-md-6 col-sm-12">
-            <div class="col-md-3 col-sm-12 reviews" style="background-color: #25D366; color:#fff; margin-left:76.5%;">
-                <h5>3,304,36</h5>
+            <div class="col-md-3 col-sm-12 reviews" style="background-color: #25D366; color:#fff; margin-left:76.5%; margin-top:12%;">
+                <h5 class="centerClass">3,304,36</h5>
                 <p>customers & counting</p>
                 <i class="fa fa-users" aria-hidden="true" style="color:#fff; margin-left:30%; font-size:30px;"></i>
             </div>
             <br>
             <div class="col-md-3 col-sm-12 reviews" style="background-color: #25D366; color:#fff;margin-left:76.5%;">
-                <h5>4.7/5</h5>
+                <h5 class="centerClass">4.7/5</h5>
                 <p>average garage rating</p>
                 <i class="fa fa-star" aria-hidden="true" style="color:#fff; margin-left:30%; font-size: 30px;"></i>
             </div>
             <br>
             <div class="col-md-3 col-sm-12 reviews" style="background-color: #25D366; color:#fff; margin-left:76.5%;">
-                <h5>15,327</h5>
+                <h5 class="centerClass">15,327</h5>
                 <p>garages nationwide</p>
                 <i class="fa fa-car" aria-hidden="true" style="color:#fff; margin-left:30%; font-size: 30px;"></i>
             </div>
@@ -267,76 +454,138 @@
 <div class="container  text-center" style="background-color:#fff; margin-top:5%;">
     <h1 class="rewa">How Does It Work?</h1>
 
-    <p  class="rewa">Find a great local garage in 4 easy steps.</p>
+    <p  class="rewa" style="color: black;" >Find a great local garage in 4 easy steps.</p>
 
 </div>
 
-<div class="container">
-    <div id="carouselExampleCaptions" class="carousel slide d-sm-none d-md-block" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" > 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row text-center">
+        <div class="col-6 col-md-6 col-sm-auto">
+          <h1>
+            Enter Your Details
+          </h1><br>
+          <p style="font-family:'Artifakt Element';color: black;">
+          Tell us what you’re looking for or what needs fixing on your car and<br>
+           we’ll find the best garages nearby and give you the best price for<br>
+            the job.</p>
+            <br><br>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imgs/choose your garage.PNG" class="d-block w-100" alt="error">
-            
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/enter your details.PNG" class="d-block w-100" alt="error">
-           
-          </div>
-          <div class="carousel-item">
-            <img src="imgs/leave a reviw.PNG" class="d-block w-100" alt="...">
-           
-          </div>
+            <div class="col-6 col-md-6 col-sm-auto">
+              <img src="images/laptop.jpg"class="img-fluid">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden" style="color: lawngreen;">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden" style="background-color:lawngreen;">Next</span>
-        </button>
       </div>
-</div>
+      <div class="carousel-item ">
+        
+        <div class="row text-center" >
+          <div class="col-6 col-md-6 col-sm-auto">
+            <h1>
+              Retrive Your Quotes
+            </h1><br>
+            <p style="font-family:'Artifakt Element'; color: black;">
+              Sit back and watch the quotes for your job start rolling in. We notify<br>
+              all the garages in your area that your job is available so you can<br>
+               make a cup of coffee whilst you wait.</p>
+              <br><br>
+          </div>
+              <div class="col-6 col-md-6 col-sm-auto">
+                <img src="images/car.jpg" class="img-fluid">
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+
+        <div class="row text-center" >
+          <div class="col-6 col-md-6 col-sm-auto">
+            <h1>
+              Choose Your Garage
+            </h1><br>
+            <p style="font-family:'Artifakt Element'; color: black;">
+              Once you have received your quotes from our specialist<br>
+               mechanics, garages or dealerships it’s time for you to<br>
+                select the
+                quote that’s right for you.</p>
+              <br><br>
+          </div>
+              <div class="col-6 col-md-6 col-sm-auto">
+                <img src="images/reviewslide.jpg" class="img-fluid">
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item active">
+          <div class="row text-center">
+          <div class="col-6 col-md-6 col-sm-auto">
+            <h1>
+              Leave a Review
+            </h1><br>
+            <p style="font-family:'Artifakt Element';color: black;">
+              To show you’re happy, leave the garage a review and recommend<br>
+               the garage to friends and others on WhoCanFixmycar.com.</p>
+              <br><br>
+          </div>
+              <div class="col-6 col-md-6 col-sm-auto">
+                <img src="images/meachanic.jpg"class="img-fluid">
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 <br>
 <div class="container text-center">
-    <p>Are you a garage, dealership or mechanic and interested in becoming a member?</p>
+    <p style="color: black;">Are you a garage, dealership or mechanic and interested in becoming a member?</p>
 
 
-<buttton class="btn col-md-2 col-sm-12 mx-auto" id="find"">Find Out More</buttton>
-</div>
-<div class="container">
-<hr>
-<div class="row">
-<div class="col-md-6 col-sm-12">
-<h6 style="font-weight: bolder;">How does Ottos Mechanics.com work?</h6>
-<video controls poster="imgs/tumnail1.jpg" height="400px" width="100%">
-    <source src="imgs/How_does_WhoCanFixMyCar.com_work.mp4" type="video/mp4">
-    
-    Your browser does not support the video tag.
-  </video>
-</div>
-<div class="col-md-6 col-sm-12">
-    <h6 style="font-weight: bolder;">How does Ottos Mechanics.com work?</h6>
-    <video controls poster="imgs/thumnail2.jpg" height="400px" width="100%">
-        <source src="imgs/Whoever,_wherever,_WhoCanFixMyCar.com_can_help.mp4" type="video/mp4">
-        
-        Your browser does not support the video tag.
-      </video>
-
-</div>
-</div>
-
-</div>
+<buttton class="btn col-md-2 col-sm-12 mx-auto" id="find">Find Out More</buttton>
+</div><br>
+<div class="container-fluid" style="padding: 20px; width: 100% !important;background-color: rgb(201, 201, 201);">
+      <h1 style="text-align: center; font-weight: 700; color: rgb(45, 95, 187)">Happy Drivers Every Week</h1><br>
+      <p style="text-align: center; color: rgb(0, 0, 0)">Take a look at these helpful videos.</p><br>
+      <div class="row" style="display: flex; justify-content: space-between; ">
+        <div class="col-12 col-md-1 col-lg-1"></div>
+        <div class="col-12 col-md-5 col-lg-5">
+          <div class="banner">
+            <div class="content">
+              <img src="ll/imgs/tumnail1.jpg" style="width: 90%" onclick="vid1();">
+            </div>
+          </div>
+      
+            <div class="trailer">
+              <video src="ll/imgs/How_does_WhoCanFixMyCar.com_work.mp4" controls="true" class="vid1"></video>
+              <img src="ll/imgs/close.png" class="close" onclick="vid1();">
+            </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-5">
+              <div class="banner">
+                <div class="content">
+                  <img src="ll/imgs/thumnail2.jpg" style="width: 90%" onclick="vid2();">
+                </div>
+              </div>
+          
+                <div class="trailer2">
+                  <video src="ll/imgs/Whoever,_wherever,_WhoCanFixMyCar.com_can_help.mp4" controls="true" class="vid2"></video>
+                  <img src="ll/imgs/close.png" class="close2" onclick="vid2();">
+                </div>
+                </div>
+           <div class="col-12 col-md-1 col-lg-1"></div>
+      </div>
+    </div>
 <div class="container text-center">
   
-            <h3 style="font-weight: bolder;">A little more about Ottos Mechanics.com:</h3>
-            <p style="font-size:large;">We work with over 15,325 garages, mechanics and dealerships nationwide…</p>
-            <p >We work with everyone from main dealers to mobile<br>
+            <h3 style="font-weight: bolder;color: black;">A little more about Ottos Mechanics.com:</h3>
+            <p style="font-size:large; color: black;">We work with over 15,325 garages, mechanics and dealerships nationwide…</p>
+            <p style="color: black;">We work with everyone from main dealers to mobile<br>
             mechanics. Whatever you drive, whatever’s wrong, we’re<br>
             sure to know a garage or specialist who can help.</p>
    
@@ -383,9 +632,9 @@
            
         </div>
         <div class="row " id="red"  style=" margin-left:50%; margin-top: 2%; margin-bottom: 2%; width: 400px;">
-            <input type="text" value="Enter your Reg" style="margin-bottom: 2%;">
+            <input type="text" class="form-control" placeholder="Enter your Reg" style="margin-bottom: 2%; ">
             
-            <button class="btn" id="get2">Get Quotes</button>
+            <button class="btn btn-success" id="get2">Get Quotes</button>
         </div>
         
            
@@ -504,7 +753,23 @@
 
 
 
-
+<script type="text/javascript">
+    function vid1(){
+      var trailer= document.querySelector(".trailer")
+       var video= document.querySelector(".vid1")
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currenTime=0;
+      
+    }
+    function vid2(){
+      var trailer2= document.querySelector(".trailer2")
+       var video2= document.querySelector(".vid2")
+      trailer2.classList.toggle("active");
+      video2.pause();
+      video2.currenTime=0;
+    }
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>

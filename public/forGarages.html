@@ -13,16 +13,72 @@
     <link rel="stylesheet" href="style.css">
     <title>For Garages </title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    
     <script>
-    $(document).ready(function(){
-        $(".slide-up").click(function(){
-            $(".box").slideUp();
-        });
-        $(".slide-down").click(function(){
-            $(".box").slideDown();
-        });
-    });
-</script>
+       
+        $(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+
+});
+      </script>
+      <style>
+        .navbar.scrolled{
+        background-color: #fff !important;
+      }
+     .dropdown {
+         position: static !important;
+     }
+     
+     .dropdown-menu {
+         border: 0px;
+         margin-top: 0px !important;
+         width: 100% !important;
+     }
+     @media only screen and (max-width:768px)
+     {        
+     .navbar{
+     background-color: #fff !important;
+     }   
+     .dropdown-item {
+         font-size: 12px !important;
+     }
+     .hidePara{
+         display: none;
+     }
+     }
+
+ </style>
+ <style>
+    .navbar.scrolled{
+    background-color: #fff !important;
+  }
+ .dropdown {
+     position: static !important;
+ }
+ 
+ .dropdown-menu {
+     border: 0px;
+     margin-top: 0px !important;
+     width: 100% !important;
+ }
+ @media only screen and (max-width:768px)
+ {        
+ .navbar{
+ background-color: #fff  !important;
+ }   
+ .dropdown-item {
+     font-size: 12px !important;
+     padding: 5px;
+ }
+ }
+
+</style>
 <style>
    @media (max-width: 767px){
 .nav-item::before {
@@ -35,7 +91,15 @@
     content: "";
     border: none;
     background-color: white !important;
-}}
+}
+    .customCol
+    {
+        height: auto;
+    }
+    .hideCol{
+        display: none;
+    }
+}
 
 nav > .nav.nav-tabs{
 
@@ -80,7 +144,7 @@ border: none;
   background: #ffffff;
   color:#fff;
   border-radius:0;
-  transition:background 0.20s linear;
+  transition: -background 0.20s linear;
 }
 .rqBtn:hover{
     background-color: #68ffa5 !important;
@@ -95,89 +159,202 @@ border: none;
  .vpBtn:hover a{
     color: white !important;
 }
-
+.boxHover:hover{
+    box-shadow: 0px 0px 2px 0px rgb(0, 94, 170) !important;
+    cursor: pointer;
+}
+.navbar.scrolled {
+  background-color: #fff !important;
+}
 </style>
 </head>
-<body> 
-    
+<body  style=" background-image:url(imgs/Service-bg.jpg); width: 100%; min-height:100px !important ;background-size: cover; background-repeat: no-repeat; "> 
 <!-- navbar -->
-<div class="navigation-wrap bg-light start-header start-style">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-tra
+                    justify-content-between text-white fixed-top"
+            style="background: transparent;">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png"
+                    width="90" height="70"
+                    class="d-inline-block align-top" alt="">
+            
+            </a>
+            <button class="navbar-toggler "
+                    type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown01"
+                    aria-controls="navbarNavDropdown01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="outline-color:#244b67 !important;">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #244b67;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNavDropdown01">
+<ul class="navbar-nav mr-auto"> </ul>
+                <ul class="navbar-nav ">
+                    
+                    <!--dropdown item of menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false" style="color: chartreuse">
+                         <b>Find Garages</b>
+                        </a>
+                        <!--dropdown sub items of menu-->
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <div class="container">
+                              <h5> Best Garages For</h5>
+                            <div class="row"style="display: flex;">
+                                <div class="col-12 col-sm-12 col-md-3" ">
+                                   
+                                   <a class="dropdown-item" href="mobileMechanic.html"style="display: flex;">
+                                    <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+                                        &nbsp;&nbsp;
+                                     Mobile Mechanic
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="cambeltChange.html" style="display: flex;"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Cambelt Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="brake&Disc.html"style="display: flex;"> <img src="imgs/AllService/brake-pads-discs.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Brake Pads and Discs
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Aircon.html"style="display: flex;"> <img src="imgs/AllService/icon-heatingCooling.svg"width="22px">
+                                    &nbsp;&nbsp;
+                                    Aircon Regas
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Diagnostic.html"style="display: flex;"> <img src="imgs/AllService/icon-diagnostics.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Diagnostics
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="fullService.html"style="display: flex;"> <img src="imgs/AllService/full-service-icon.svg" width="22px" alt="">
+                                    &nbsp;&nbsp;
+                                     
+                                    Full Service
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="OilChnage.html"style="display: flex;"> <img src="imgs/AllService/oil-change.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Oil Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="MobileTyreFitting.html"style="display: flex;"> <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Mobile Tyre Fitting
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="shockAbsorber.html"style="display: flex;"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+                                    &nbsp;&nbsp;
+                                     
+                                    Shock Absorber Repair
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="turboFault.html"style="display: flex;"> <img src="imgs/AllService/icon-heatingCooling.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Turbo Faults and Replacement
+                                   </a> 
+                                </div>
+                                 
+                            </div>
+                             
+                           <br> <a href="allService.html"> <h6 style="font-weight: 700; color: #244b67;">View All Repairs</h6></a>
+                            </div>
+                            
+                           
+                        </div>
+                    </li>
+                    <li> <a class="nav-link"
+                      href="forGarages.html" style="color: chartreuse;">
+                       <b>For Garages</b>
+                      </a>
+                  </li>
+                    <li> <a class="nav-link"
+                        href="How it works.html" style="color: chartreuse;">
+                         <b>How It Works</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="signUp.html" style="color: chartreuse">
+                         <b>Sign Up</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="login.html" style="color: chartreuse">
+                         <b>Log In</b>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="login.html">
+                            <button type="button" class="btn btn-primary" style="background-color: rgb(52, 66, 255); border-radius: 10px; ">Retrieve Quotes</button>
+                            </a>
+                        </li>
+                    
+                </ul>
                 
-                    <a class="navbar-brand" href="index.html" target="_blank"><img src="imgs/logo.png" style="width: 90px !important; height: 70px !important;" alt=""></a>	
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="allService.html">Find Garage</a>
-                            </li>
-                                                        
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="How it works.html">How It Works</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="forGarages.html">For Garages
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="signUp.html">Sign up
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">Log In</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html" style="margin-top: -5px;">
-                                <button type="button" class="btn btn-outline-dark ">Retrieve Quotes</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </nav>		
+            
             </div>
-        </div>
-    </div>
-</div>
+        </nav>
+    
 <br><br><br><br>
 <!-- Header Portion -->
-<div class="container-fuild" style="background-image: url(imgs/Service-bg.jpg); height: 103%;background-size: cover;width: 100%; padding: 10%;">
+<div class="container-fuild">
     <div class="container" style="text-align: center;">
-        
-<div class="row">
-    <div class="col-12 col-sm-12 col-md-6">
+    <div class="row">
+    <div class="col-12 col-sm-12 col-md-6 customCol">
         <h3 style="color: white; text-align: left;">
-            <br>
+            <br><br><br><br>
             <b>Join the UK's largest work provider</b></h3 style="color: white;">
             <h4 style="color: white; text-align: left;">Fill your booking calendar for<span style="color: rgb(37, 250, 37); font-weight: 700;">£249.99</span>  a<br> year <b>(just £20.84 a month)</b></h4>
-            <p style="text-align: left; color: white;">
+            <p style="text-align: left; color: white; " class="hidePara">
                 Unlimited quoting, time saving automation and access to over 2,000,000 drivers. WhoCanFixMyCar.com brings garages work and growth. See
-                <a href="allService.html" style="color: white;"><u>all our features</u></a>
+                <a href="allService.html" style="color: white !important;"><u>all our features</u></a>
             </p>
             <br>
             <div class="row">
                 <div class="col-12 col-md-4 col-sm-12">
-                    <button class="btn btn-primary rqBtn" style="box-shadow: 0px 2px 3px 1px grey;border-radius: 5px;  background-color: rgb(37, 250, 126); border:0px;">
+                    <button class="btn btn-primary rqBtn axbtn" style="box-shadow: 0px 2px 3px 1px grey;border-radius: 5px;  background-color: rgb(37, 250, 126); border:0px;">
                        <a href="signUp.html" style="font-size: 14px; color: navy;font-weight: 700 !important;"> <b>Create Free Account</b></a>
                     </button>
                 </div>
                 <div class="col-12 col-md-4 col-sm-12">
-                    <button class="btn btn-primary vpBtn" style="box-shadow: 0px 2px 3px 1px grey;border-radius: 5px; background-color: rgb(36, 40, 107);  border:0px;">
+                    <button class="btn btn-primary vpBtn axbtn" style="box-shadow: 0px 2px 3px 1px grey;border-radius: 5px; background-color: rgb(36, 40, 107);  border:0px;">
                         <a href="login.html" style="color: white !important;font-size: 14px; color: navy;font-weight: 700 !important;">     Request Call Back             </button>
                         </a>
                     </div>
             </div>
     </div>
     <div class="col-12 col-sm-12 col-md-1"></div>
-    <div class="col-12 col-sm-12 col-md-5">
-        <br>
+    <div class="col-12 col-sm-12 col-md-5 hideCol">
+        <br><br><br><br>
         <img src="imgs/forGarage-bg-col.png" style="width: 70%;" alt="">
     </div>
 </div>
@@ -186,7 +363,7 @@ border: none;
     </div>
     
 </div>
-<div class="container-fluid text-center" style="background-color:#263139; ">
+<div class="container-fluid text-center" style="background-color:#263139; margin-top: 20%;">
    
     <div class="container">
         
@@ -223,19 +400,19 @@ border: none;
     <br>
     <br>
     <div class="row" style=" display: flex;justify-content: center;">
-        <div class="col-12 col-md-2 col-sm-12" style="background-color: rgb(47, 144, 255); padding: 20px;   margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163); ">
+        <div class="col-12 col-md-2 col-sm-12 boxHover" style="background-color: rgb(47, 144, 255); padding: 20px;   margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163); ">
             <h4 style="color: white !important;"><b>Find</b></h4>
             <p style="text-align: left;color: white !important; font-size: 14px;">Drivers from around the UK post repair and service jobs.</p>
         </div>
-        <div class="col-12 col-md-2 col-sm-12" style="background-color: rgb(241, 241, 241); padding: 20px; margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163);">
+        <div class="col-12 col-md-2 col-sm-12 boxHover" style="background-color: rgb(241, 241, 241); padding: 20px; margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163);">
             <h4 style="color: #000 !important;"><b>Quote</b></h4>
             <p style="text-align: left;color: #000 !important; font-size: 14px;">You send out bespoke and automated quotes.</p>
         </div>
-        <div class="col-12 col-md-2 col-sm-12" style="background-color: rgb(241, 241, 241); padding: 20px; margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163);">
+        <div class="col-12 col-md-2 col-sm-12 boxHover" style="background-color: rgb(241, 241, 241); padding: 20px; margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163);">
             <h4 style="color: #000 !important;"><b>Book</b></h4>
             <p style="text-align: left;color: #000 !important; font-size: 14px;">The driver then accepts your quote and books in.</p>
         </div>
-        <div class="col-12 col-md-2 col-sm-12" style="background-color: rgb(241, 241, 241); padding: 20px; margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163);">
+        <div class="col-12 col-md-2 col-sm-12 boxHover" style="background-color: rgb(241, 241, 241); padding: 20px; margin: 1%; box-shadow: 0px 2px 3px 1px rgb(163, 163, 163);">
             <h4 style="color: #000 !important;"><b>Review</b></h4>
             <p style="text-align: left;color: #000 !important; font-size: 14px;">You do the work & the driver pays and leaves you a review.</p>
         </div>
@@ -428,18 +605,18 @@ border: none;
         <div class="row">
             <div class="col-12 col-md-3 col-sm-12">
                 <h5>New work finds you</h5>
-                <img src="imgs/tools.png" alt="" style="margin: 50px; width: 50%%;">
+                <img src="imgs/tools.png" alt="" style="margin: 50px; width: 50%;">
                 <p style="text-align: left;">Quote on as much work as you want from the thousands of drivers in your area.</p>
             </div>
             <div class="col-12 col-md-3 col-sm-12">
                 <h5>Become more visible</h5>
-                <img src="imgs/location.png" alt="" style="margin: 50px; width: 50%%;">
+                <img src="imgs/location.png" alt="" style="margin: 50px; width: 50%;">
                 <p style="text-align: left;">Boost your presence with a profile, reviews, specialist repair badges and join industry bodies.</p>
             </div>
             <div class="col-12 col-md-3 col-sm-12">
                 <h5>Save time everyday
                 </h5>
-                <img src="imgs/calendar.png" alt="" style="margin: 50px; width: 50%%;">
+                <img src="imgs/calendar.png" alt="" style="margin: 50px; width: 50%;">
                 <p style="text-align: left;">Our system is designed to give you free time so you can do what makes you money; work on cars
 
                     .</p>
@@ -447,23 +624,24 @@ border: none;
             <div class="col-12 col-md-3 col-sm-12">
                 <h5>Connect with brands
                 </h5>
-                <img src="imgs/connection.png" alt="" style="margin: 50px; width: 50%%;">
+                <img src="imgs/connection.png" alt="" style="margin: 50px; width: 50%;">
                 <p style="text-align: left;">Gain access to massive brands, join work providing networks and join tow-in/warranty providers
 
                 </p>
             </div>
     </div>
 </div><br><br>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
-      <div class="col-xs-12 ">
+      <div class="col-xs-12">
         <nav>
+            <div class="container">
           <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><img src="imgs/tab-img.PNG" alt=""></a>
             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="imgs/tab-img2.PNG" alt=""></a>
             <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="imgs/tab-img3.PNG" alt=""></i></a>
            
-          </div>
+          </div></div>
         </nav>
         <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -588,7 +766,7 @@ border: none;
       
       </div>
     </div>
-</div>
+</div> -->
 </div>
 </div>
 </div>
@@ -723,7 +901,7 @@ border: none;
     <div class="lastPortion" style="padding: 10px;">
         <div class="row" style=" display: flex;
         justify-content: space-between;">
-            <div class="col-12 col-sm-12 col-md-4" style="display: flex; text-align:center"><p style="color: rgb(121, 121, 121);">© 2021</p>&nbsp;&nbsp;
+            <div class="col-12 col-sm-12 col-md-4" style="display: flex; text-align:center"><p style="color: rgb(121, 121, 121);">© 2021</p>
                 <p>  <a href="#" style="text-decoration: none; color: #A7D9EE;">Otto's Mechanics </a> </p></div>
             <div class="col-12 col-sm-12 col-md-4"style="text-align:center">
                 <a href="index.html">

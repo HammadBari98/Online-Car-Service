@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="service.css" rel="stylesheet">
-    <title>Profile</title>
+    
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>View Profile</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
     $(document).ready(function(){
@@ -18,95 +24,220 @@
         });
     });
 </script>
+<script>
+       
+    $(window).scroll(function(){
+$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+
+});
+  </script>
 <style>
-    .rating_circle{
-    width: 100px;
-    height: 100px;
-    border-radius: 70px;
-    border: 1px none;
-    font-size: 35px;
-  }
-  .rating_text{
-      margin-top: 38px;
-  }
-  .stars-outer {
-  display: inline-block;
-  position: relative;
-  font-family: FontAwesome;
-  font-size: 20px;
-  letter-spacing: 5px;
+.navbar{
+background-color: #fff !important;
+}   
+
+.dropdown {
+position: static !important;
 }
 
-.stars-outer::before {
-  content: "\f006 \f006 \f006 \f006 \f006";
+.dropdown-menu {
+border: 0px;
+margin-top: 0px !important;
+width: 100% !important;
+}
+@media only screen and (max-width:768px)
+{        
+.navbar{
+background-color: #fff !important;
+}   
+.dropdown-item {
+font-size: 12px !important;
+padding: 5px;
+}
 }
 
-.stars-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-}
-
-.stars-inner::before {
-content: "\f005 \f005 \f005 \f005 \f005";
-color: rgb(255, 230, 0);
-}
-.dark {
-    background-color:rgb(255, 230, 0);
-}
+</style>
+<style>
+   @media (max-width: 767px){
+.nav-item::before {
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: 0;
+    width: 11px;
+    height: 1px;
+    content: "";
+    border: none;
+    background-color: white !important;
+}}
 </style>
 </head>
-<body>
+<body> 
+    
 <!-- navbar -->
 <div class="navigation-wrap bg-light start-header start-style">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-md navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-tra
+                    justify-content-between text-white fixed-top"
+            >
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png"
+                    width="90" height="70"
+                    class="d-inline-block align-top" alt="">
+            
+            </a>
+            <button class="navbar-toggler "
+                    type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown01"
+                    aria-controls="navbarNavDropdown01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="outline-color:#244b67 !important;">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #244b67;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNavDropdown01">
+<ul class="navbar-nav mr-auto"> </ul>
+                <ul class="navbar-nav ">
+                    
+                    <!--dropdown item of menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false" style="color: chartreuse">
+                         <b>Find Garages</b>
+                        </a>
+                        <!--dropdown sub items of menu-->
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <div class="container">
+                              <h5> Best Garages For</h5>
+                            <div class="row"style="display: flex;">
+                                <div class="col-12 col-sm-12 col-md-3" ">
+                                   
+                                   <a class="dropdown-item" href="mobileMechanic.html"style="display: flex;">
+                                    <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+                                        &nbsp;&nbsp;
+                                     Mobile Mechanic
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="cambeltChange.html" style="display: flex;"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Cambelt Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="brake&Disc.html"style="display: flex;"> <img src="imgs/AllService/brake-pads-discs.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Brake Pads and Discs
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Aircon.html"style="display: flex;"> <img src="imgs/AllService/icon-heatingCooling.svg"width="22px">
+                                    &nbsp;&nbsp;
+                                    Aircon Regas
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Diagnostic.html"style="display: flex;"> <img src="imgs/AllService/icon-diagnostics.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Diagnostics
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="fullService.html"style="display: flex;"> <img src="imgs/AllService/full-service-icon.svg" width="22px" alt="">
+                                    &nbsp;&nbsp;
+                                     
+                                    Full Service
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="OilChnage.html"style="display: flex;"> <img src="imgs/AllService/oil-change.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Oil Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="MobileTyreFitting.html"style="display: flex;"> <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Mobile Tyre Fitting
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="shockAbsorber.html"style="display: flex;"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+                                    &nbsp;&nbsp;
+                                     
+                                    Shock Absorber Repair
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="turboFault.html"style="display: flex;"> <img src="imgs/AllService/icon-heatingCooling.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Turbo Faults and Replacement
+                                   </a> 
+                                </div>
+                                 
+                            </div>
+                             
+                           <br> <a href="allService.html"> <h6 style="font-weight: 700; color: #244b67;">View All Repairs</h6></a>
+                            </div>
+                            
+                           
+                        </div>
+                    </li>
+                    <li> <a class="nav-link"
+                      href="forGarages.html" style="color: chartreuse;">
+                       <b>For Garages</b>
+                      </a>
+                  </li>
+                    <li> <a class="nav-link"
+                        href="How it works.html" style="color: chartreuse;">
+                         <b>How It Works</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="signUp.html" style="color: chartreuse">
+                         <b>Sign Up</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="login.html" style="color: chartreuse">
+                         <b>Log In</b>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="login.html">
+                            <button type="button" class="btn btn-primary" style="background-color: rgb(52, 66, 255); border-radius: 10px; ">Retrieve Quotes</button>
+                            </a>
+                        </li>
+                    
+                </ul>
                 
-                    <a class="navbar-brand" href="index.html" target="_blank"><img src="imgs/logo.png" style="width: 90px !important; height: 70px !important;" alt=""></a>	
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="allService.html">Find Garage</a>
-                            </li>
-                                                        
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="How it works.html">How It Works</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="forGarages.html">For Garages
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="signUp.html">Sign up
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">Log In</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">
-                                <button type="button" class="btn btn-outline-dark">Retrieve Quotes</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </nav>		
+            
+            </div>
+        </nav>
             </div>
         </div>
     </div>
 </div>
-<!-- body --><br><br><br><br><br>
+<br><br><br>
+
 <div class="container-fluid" style="background-color: #1c3a54; padding: 20px;">
     <div class="headPortion" >
     

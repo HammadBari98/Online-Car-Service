@@ -18,50 +18,200 @@
         });
     });
 </script>
+<script>
+       
+    $(window).scroll(function(){
+$('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+
+});
+  </script>
+<style>
+.navbar.scrolled{
+background-color: #fff !important;
+}
+.dropdown {
+position: static !important;
+}
+
+.dropdown-menu {
+border: 0px;
+margin-top: 0px !important;
+width: 100% !important;
+}
+@media only screen and (max-width:768px)
+{        
+.navbar{
+background-color: #fff !important;
+}   
+.dropdown-item {
+font-size: 10px !important;
+background-color: white;
+padding: 5px;
+}
+}
+
+</style>
 </head>
-<body>
+<body style="box-sizing: border-box;">
 <!-- navbar -->
 <div class="navigation-wrap bg-light start-header start-style">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-md navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-tra
+                    justify-content-between text-white fixed-top"
+            style="background: transparent;">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png"
+                    width="90" height="70"
+                    class="d-inline-block align-top" alt="">
+            
+            </a>
+            <button class="navbar-toggler "
+                    type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown01"
+                    aria-controls="navbarNavDropdown01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="outline-color:#244b67 !important;">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #244b67;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNavDropdown01">
+<ul class="navbar-nav mr-auto"> </ul>
+                <ul class="navbar-nav ">
+                    
+                    <!--dropdown item of menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false" style="color: chartreuse">
+                         <b>Find Garages</b>
+                        </a>
+                        
+                        <!--dropdown sub items of menu-->
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <div class="container">
+                              <h5> Best Garages For</h5>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3" style="display: flex;">
+                                   
+                                   <a class="dropdown-item" href="mobileMechanic.html">
+                                    <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;Mobile Mechanic
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="cambeltChange.html"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Cambelt Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="brake&Disc.html"> <img src="imgs/AllService/brake-pads-discs.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Brake Pads and Discs
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Aircon.html"> <img src="imgs/AllService/icon-heatingCooling.svg"width="22px">
+                                     &nbsp;&nbsp;
+                                    Aircon Regas
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Diagnostic.html"> <img src="imgs/AllService/icon-diagnostics.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Diagnostics
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="fullService.html"> <img src="imgs/AllService/full-service-icon.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Full Service
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="OilChnage.html"> <img src="imgs/AllService/oil-change.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Oil Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="MobileTyreFitting.html"> <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Mobile Tyre Fitting
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="shockAbsorber.html"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Shock Absorber Repair
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="turboFault.html"> <img src="imgs/AllService/icon-heatingCooling.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Turbo Faults and Replacement
+                                   </a> 
+                                </div>
+                                 
+                            </div>
+                             
+                           <br> <a href="allService.html"> <h6 style="font-weight: 700; color: #244b67;">View All Repairs</h6></a>
+                            </div>
+                            
+                           
+                        </div>
+                    </li>
+                    <li> <a class="nav-link"
+                      href="forGarages.html" style="color: chartreuse;">
+                       <b>For Garages</b>
+                      </a>
+                  </li>
+                    <li> <a class="nav-link"
+                        href="How it works.html" style="color: chartreuse;">
+                         <b>How It Works</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="signUp.html" style="color: chartreuse">
+                         <b>Sign Up</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="login.html" style="color: chartreuse">
+                         <b>Log In</b>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="login.html">
+                            <button type="button" class="btn btn-primary">Retrieve Quotes</button>
+                            </a>
+                        </li>
+                    
+                </ul>
                 
-                    <a class="navbar-brand" href="index.html" target="_blank"><img src="imgs/logo.png" style="width: 90px !important; height: 70px !important;" alt=""></a>	
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="allService.html">Find Garage</a>
-                            </li>
-                                                        
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="How it works.html">How It Works</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="forGarages.html">For Garages
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="signUp.html">Sign up
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">Log In</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">
-                                <button type="button" class="btn btn-outline-dark">Retrieve Quotes</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </nav>		
+            
+            </div>
+        </nav>	
             </div>
         </div>
     </div>
@@ -69,7 +219,7 @@
 
 
     <!-- Header Portion -->
-   <div class="container-fuild" style="background-image: url(imgs/Service-bg.jpg); height: auto;background-size: cover;width: 100%; padding: 5%;">
+   <div class="container-fuild" style="z-index: -1;margin-top: 0px !important ;background-image: url(imgs/Service-bg.jpg); height: auto;background-size: cover;width: 100%; padding: 5%;">
         <div class="container" style="text-align: center;">
             <br><br><br><br><br>
             <h1 style="color: #36f182;">Book a Full Car Service Near You</h1>
@@ -96,7 +246,7 @@
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expande  d="false">All Service</button>                       
                                       <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton" style="width: 100%;">                                                           
                                         <h3></h3>
-                                        <input type="text" class="form-control" placeholder="" style="font-size: 14px;">                                 
+                                        <input type="text" class="form-control" placeholder="search.." style="font-size: 14px;">                                 
                                        <a class="dropdown-item" href="allService.html">All Services</a>                          
                                        <a class="dropdown-item" href="mobileMechanic.html">Mobile Mechanic</a>
                                        <a class="dropdown-item" href="FullService&MOT.html">Servicing and MOT</a>
@@ -105,17 +255,13 @@
                                        <a class="dropdown-item" href="brake&Disc.html">Brake Repairs</a>                                        
                                        <a class="dropdown-item" href="mobileMechanic.html">Mobile Mechanics and Services</a>                                                
                                        <a class="dropdown-item" href="ExhaustFitting.html">Engine and Cooling</a>                                              
-                                       <a class="dropdown-item" href="#">Not Sure - Help Me Choose!</a>                                              
                                        <a class="dropdown-item" href="Aircon.html">Air-Con, Heating and Cooling</a>                                              
                                        <a class="dropdown-item" href="bodyWork.html">Bodywork, Dents and Smart Repairs</a>                                  
                                        <a class="dropdown-item" href="bodyWork.html">Breakdown and Recovery</a>                                               
                                         <a class="dropdown-item" href="Diagnostic.html">Diagnostics</a>                                        
                                         <a class="dropdown-item" href="electricalFault.html">Electrical and Batteries</a>        
                                         <a class="dropdown-item" href="electricalFault.html">Hybrid and Electric Vehicles</a>                                               
-                                        <a class="dropdown-item" href="#">Interior, Audio and Navigation</a>                                               
-                                        <a class="dropdown-item" href="#">Safety Components </a>                                               
-                                        <a class="dropdown-item" href="#">Security, Locking and Keys</a>                                               
-                                        <a class="dropdown-item" href="#">Steering and Suspension</a>                    
+                                                       
                                      </div>                                            
                                     </div>        
                               </div>
@@ -190,10 +336,7 @@
     <p style="font-weight:700">Find Great Value Local Servicing, Car Repairs and Parts with Who Can Fix My Car.</p>
     <p style="text-align:center;">
         We work with over 15,333 specialists including Garages, Mobile Mechanics and Dealerships. Whether you want to save money or find a local specialist, we can help.<br><br>
-
-
-
-        Enter your Registration, describe what's wrong, and local garages will send competitive quotes straight to your inbox. Read customer reviews before taking your pick, and even book in online!<br>           
+     Enter your Registration, describe what's wrong, and local garages will send competitive quotes straight to your inbox. Read customer reviews before taking your pick, and even book in online!<br>           
     </p><br>
     <br>
     <h2><b>Most common repairs and services</b></h2>
@@ -203,7 +346,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/mobile-mechanic.svg" class="cImg"  >
+                        <img src="imgs/AllService/mobile-mechanic.svg" class="cImg"  style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                         <a href="mobileMechanic.html" style="color: black;">
@@ -215,7 +358,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/full-service-icon.svg" class="cImg"  >
+                        <img src="imgs/AllService/full-service-icon.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="fullService.html" style="color: black;">
@@ -226,7 +369,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/exhaust-fitting.svg" class="cImg"  >
+                        <img src="imgs/AllService/exhaust-fitting.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="ExhaustFitting.html" style="color: black;">
@@ -237,7 +380,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/clutch-and-gearbox.svg" class="cImg"  >
+                        <img src="imgs/AllService/clutch-and-gearbox.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="clutchReplacement.html" style="color: black;">
@@ -251,7 +394,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/cambelt.svg" class="cImg"  >
+                        <img src="imgs/AllService/cambelt.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="cambeltChange.html" style="color: black;">
@@ -262,7 +405,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/oil-change.svg" class="cImg" style="width: 70px;"  >
+                        <img src="imgs/AllService/oil-change.svg" class="cImg" style="width: 50px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="OilChnage.html" style="color: black;">
@@ -273,7 +416,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/bodywork-dents.svg" class="cImg"  >
+                        <img src="imgs/AllService/bodywork-dents.svg" class="cImg"   style="width: 50px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="bodyWork.html" style="color: black;">
@@ -284,7 +427,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/windows.svg" class="cImg"  >
+                        <img src="imgs/AllService/windows.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="wingMirror.html" style="color: black;">
@@ -298,7 +441,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/brake-pads-discs.svg" class="cImg"  >
+                        <img src="imgs/AllService/brake-pads-discs.svg" class="cImg"  style="width: 60px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="brake&Disc.html" style="color: black;">
@@ -309,7 +452,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/mobile-mechanic.svg" class="cImg"  >
+                        <img src="imgs/AllService/mobile-mechanic.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="MobileTyreFitting.html" style="color: black;">
@@ -320,7 +463,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/mot-icon.svg" class="cImg"  >
+                        <img src="imgs/AllService/mot-icon.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="MOT.html" style="color: black;">
@@ -331,7 +474,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/full-service-icon.svg" class="cImg"  >
+                        <img src="imgs/AllService/full-service-icon.svg" class="cImg"  style="width: 60px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="FullService&MOT.html" style="color: black;">
@@ -345,7 +488,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/icon-steering.svg" class="cImg"  >
+                        <img src="imgs/AllService/icon-steering.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                         <a href="Aircon.html" style="color: black;">
@@ -357,7 +500,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/icon-engineCooling.svg" class="cImg"  >
+                        <img src="imgs/AllService/icon-engineCooling.svg" class="cImg"  style="width: 60px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="shockAbsorber.html" style="color: black;">
@@ -368,7 +511,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/icon-battery.svg" class="cImg"  >
+                        <img src="imgs/AllService/icon-battery.svg" class="cImg"   style="width: 60px;">
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="AlternateRepair.html" style="color: black;">
@@ -379,7 +522,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/icon-battery.svg" class="cImg"  >
+                        <img src="imgs/AllService/icon-battery.svg" class="cImg"  style="width: 60px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="electricalFault.html" style="color: black;">
@@ -393,7 +536,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/icon-heatingCooling.svg" class="cImg"  >
+                        <img src="imgs/AllService/icon-heatingCooling.svg" class="cImg"  style="width: 60px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="Diagnostic.html" style="color: black;">
@@ -404,7 +547,7 @@
             <div class="col-md-3 col-12 col-sm-12">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
-                        <img src="imgs/AllService/exhaust-fitting.svg" class="cImg"  >
+                        <img src="imgs/AllService/exhaust-fitting.svg" class="cImg"  style="width: 60px;" >
                     </div>
                     <div class="col-12 col-sm-12 col-md-8" style="text-align: left;">
                        <a href="turboFault.html" style="color: black;">
@@ -599,18 +742,18 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-4" >
+    <div class="col-12 col-sm-12 col-md-4" style="margin-bottom: 10px;">
         <div class="container-fluid">
             <br>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6">
                     <a href="viewProfile.html">
-                    <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 10px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
+                    <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
                 </a></div>
                 
                 <div class="col-12 col-sm-12 col-md-6"> 
                     <a href="reqQuote.html">
-                    <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 10px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
+                    <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
                 </a>
                 </div>
             </div>
@@ -623,13 +766,77 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-10">
                     <p style="margin-bottom: 0px;"><b>Cris, Toyota Previa</b>on 31.05.21</p>
-                    <p style="margin-top: 0px;">Kind, courteous and professional. I would 100% recommended this garage</p>
+                    <p style="margin-top: 0px; margin-bottom: 10px;">Kind, courteous and professional. I would 100% recommended this garage</p>
                 </div>
             </div>
             
         </div>
     </div>
+    
 </div>
+<br><br>    
+<div class="row"  style="border: 1px solid silver;">
+    <div class="col-12 col-sm-12 col-md-8" style="background-color:#F4F4F4;" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="card"style="background-color:#F4F4F4;border: 0px">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" src="imgs/card2.png" alt="Card image cap" style="margin-top: 10%; margin-left: 5px;">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title" ><a href="#"style="color: black !important;">Car Technic</a></h4>
+                                <h6 class="card-text"><b>25 </b>Jobs Completed. <i class="fa fa-location-arrow" aria-hidden="true"></i> Mitcham
+                                    <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 230, 0)"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 230, 0)"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 230, 0)"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 230, 0)"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 230, 0)"></i>
+                                    5.0 / 5
+                                </h6>
+                                <hr>
+                                <p style="color: #808080; text-align:left ;">We are an independent Vehicle service station situated in Liongate Enterprise Park on Morden Road. Specialist is German and Japanese cars. Along with</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4" style="margin-bottom: 10px;">
+        <div class="container-fluid">
+            <br>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a href="viewProfile.html">
+                    <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
+                </a></div>
+                
+                <div class="col-12 col-sm-12 col-md-6"> 
+                    <a href="reqQuote.html">
+                    <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
+                </a>
+                </div>
+            </div>
+            <br>
+            <div class="row" style="border: 0.5px solid silver;">
+                <div class="col-12 col-sm-12 col-md-2">
+                    <div class="smImg">
+                    <img src="imgs/review.jpg" style="border-radius:10px ;">
+                </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-10">
+                    <p style="margin-bottom: 0px;"><b>Cris, Toyota Previa</b>on 31.05.21</p>
+                    <p style="margin-top: 0px; margin-bottom: 10px;">Kind, courteous and professional. I would 100% recommended this garage</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
 </div>
 <br><br>
 <div class="container-fluid" style="width: 80%;">
@@ -662,18 +869,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-4" >
+        <div class="col-12 col-sm-12 col-md-4" style="margin-bottom: 10px;">
             <div class="container-fluid">
                 <br>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6">
                         <a href="viewProfile.html">
-                        <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 10px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
+                        <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
                     </a></div>
                     
                     <div class="col-12 col-sm-12 col-md-6"> 
                         <a href="reqQuote.html">
-                        <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 10px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
+                        <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
                     </a>
                     </div>
                 </div>
@@ -686,7 +893,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-10">
                         <p style="margin-bottom: 0px;"><b>Cris, Toyota Previa</b>on 31.05.21</p>
-                        <p style="margin-top: 0px;">Kind, courteous and professional. I would 100% recommended this garage</p>
+                        <p style="margin-top: 0px; margin-bottom: 10px;">Kind, courteous and professional. I would 100% recommended this garage</p>
                     </div>
                 </div>
                 
@@ -725,18 +932,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4" >
+            <div class="col-12 col-sm-12 col-md-4" style="margin-bottom: 10px;">
                 <div class="container-fluid">
                     <br>
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6">
                             <a href="viewProfile.html">
-                            <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 10px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
+                            <button class="btn btn-default vpBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: white; box-shadow: 0px 2px 2px 1px silver;">View profile</button>
                         </a></div>
                         
                         <div class="col-12 col-sm-12 col-md-6"> 
                             <a href="reqQuote.html">
-                            <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 10px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
+                            <button class="btn btn-success rqBtn" style="width: 100%; height: 70px; font-size: 14px; font-weight: 500; background-color: #36f182;border:0px; color: black;">Request a Quote</button>
                         </a>
                         </div>
                     </div>
@@ -749,7 +956,7 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-10">
                             <p style="margin-bottom: 0px;"><b>Cris, Toyota Previa</b>on 31.05.21</p>
-                            <p style="margin-top: 0px;">Kind, courteous and professional. I would 100% recommended this garage</p>
+                            <p style="margin-top: 0px; margin-bottom: 10px;">Kind, courteous and professional. I would 100% recommended this garage</p>
                         </div>
                     </div>
                     
@@ -771,7 +978,7 @@
             </h3>
             <br>
             </div>
-            <div class="container" style="width: 40%;">
+            <div class="container fwCon" style="width: 40%;">
                 <div class="row" style=" display: flex;
                 justify-content: space-between;">
                     <div class="col-12 col-md-6 col-sm-12">
@@ -943,7 +1150,6 @@
             <th>Car Make</th>
             <th>Average Price</th>
             <th>Get Quotes</th>
-           
           </tr>
         </thead>
         <tbody>
@@ -1081,58 +1287,58 @@ However, there are of course certain jobs that they simply cannot complete as th
         
         <div class="row" style="font-size: 14px;">
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Newcastle upon Tyne</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Newcastle </a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Manchester</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Manchester</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Birmingham</a><br><br>
-            </div>
-        </div>
-        <div class="row"style="font-size: 14px;">
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Cardiff</a><br><br>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Glasgow</a><br><br>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Liverpool</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Birmingham</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Coventry</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Derby</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Cardiff</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Nottingham</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Glasgow</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Edinburgh</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Liverpool</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Belfast</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Coventry</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Bristol</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Derby</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Oxford</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Nottingham</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mobile Mechanic in Leicester</a><br><br>
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Edinburgh</a><br><br>
+            </div>
+        </div>
+        <div class="row"style="font-size: 14px;">
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Belfast</a><br><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Bristol</a><br><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Oxford</a><br><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Leicester</a><br><br>
             </div>
         </div>
 	</div>
@@ -1141,49 +1347,49 @@ However, there are of course certain jobs that they simply cannot complete as th
         <div class="row" style="font-size: 14px;">
             
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Vauxhall Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Vauxhall Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Ford Mobile Mechanic
+                <a href="topCompany.html" style="color: #00b81f;">Ford Mobile Mechanic
                 </a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Volkswagen Mobile Mechanic
+                <a href="topCompany.html" style="color: #00b81f;">Volkswagen Mobile Mechanic
                 </a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">BMW Mobile Mechanic
+                <a href="topCompany.html" style="color: #00b81f;">BMW Mobile Mechanic
                 </a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
             
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Audi Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Audi Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-               <a href="#" style="color: #00b81f;">Peugeot Mobile Mechanic</a><br><br>
+               <a href="topCompany.html" style="color: #00b81f;">Peugeot Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Mercedes Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Mercedes Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Renault Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Renault Mobile Mechanic</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">            
             
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Nissan Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Nissan Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Citroen Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Citroen Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Toyota Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Toyota Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Honda Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Honda Mobile Mechanic</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
@@ -1191,31 +1397,31 @@ However, there are of course certain jobs that they simply cannot complete as th
 
 
            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">  MINI Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">  MINI Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Fiat Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Fiat Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Hyundai Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">Hyundai Mobile Mechanic</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">SEAT Mobile Mechanic</a><br><br>
+                <a href="topCompany.html" style="color: #00b81f;">SEAT Mobile Mechanic</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
             
             <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;"> Land Rover Mobile Mechanic</a><br><br>
+                 <a href="topCompany.html" style="color: #00b81f;"> Land Rover Mobile Mechanic</a><br><br>
              </div>
              <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;">Skoda Mobile Mechanic</a><br><br>
+                 <a href="topCompany.html" style="color: #00b81f;">Skoda Mobile Mechanic</a><br><br>
              </div>
              <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;">Kia Mobile Mechanic</a><br><br>
+                 <a href="topCompany.html" style="color: #00b81f;">Kia Mobile Mechanic</a><br><br>
              </div>
              <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;">Mazda Mobile Mechanic</a><br><br>
+                 <a href="topCompany.html" style="color: #00b81f;">Mazda Mobile Mechanic</a><br><br>
              </div>
          </div>
 	</div>
@@ -1223,77 +1429,77 @@ However, there are of course certain jobs that they simply cannot complete as th
 		<!-- <p>Second Panel</p> -->
         <div class="row" style="font-size: 14px;">
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Full Service</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Full Service</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Clutch Replacement</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Clutch Replacement</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">MOT</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">MOT</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Full Service and MOT</a><br><br>
-            </div>
-        </div>
-        <div class="row"style="font-size: 14px;">
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Oil Change</a><br><br>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3">
-               <a href="#" style="color: #00b81f;">Aircon Regas</a><br><br>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Interim Service</a><br><br>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Timing Chain</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Full Service and MOT</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
-            
-            
-            
-            
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Puncture Repair</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Oil Change</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Windscreen Replacement</a><br><br>
+               <a href="allService.html" style="color: #00b81f;">Aircon Regas</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Alternator Repair</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Interim Service</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Exhaust Repair</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Timing Chain</a><br><br>
+            </div>
+        </div>
+        <div class="row"style="font-size: 14px;">
+            
+            
+            
+            
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="allService.html" style="color: #00b81f;">Puncture Repair</a><br><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="allService.html" style="color: #00b81f;">Windscreen Replacement</a><br><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="allService.html" style="color: #00b81f;">Alternator Repair</a><br><br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <a href="allService.html" style="color: #00b81f;">Exhaust Repair</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
             
            <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Diesel Particulate Filter Clean</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Diesel Particulate Filter Clean</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Electrical Faults</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Electrical Faults</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Front Wheel Alignment</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Front Wheel Alignment</a><br><br>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
-                <a href="#" style="color: #00b81f;">Turbo Faults and Replacement</a><br><br>
+                <a href="allService.html" style="color: #00b81f;">Turbo Faults and Replacement</a><br><br>
             </div>
         </div>
         <div class="row"style="font-size: 14px;">
             <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;"> Parking Sensors</a><br><br>
+                 <a href="allService.html" style="color: #00b81f;"> Parking Sensors</a><br><br>
              </div>
              <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;">Interim Service and MOT</a><br><br>
+                 <a href="allService.html" style="color: #00b81f;">Interim Service and MOT</a><br><br>
              </div>
              <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;">Shock Absorber Repair</a><br><br>
+                 <a href="allService.html" style="color: #00b81f;">Shock Absorber Repair</a><br><br>
              </div>
              <div class="col-12 col-sm-12 col-md-3">
-                 <a href="#" style="color: #00b81f;">Pre-Purchase Car Inspection</a><br><br>
+                 <a href="allService.html" style="color: #00b81f;">Pre-Purchase Car Inspection</a><br><br>
              </div>
          </div>
     </div>

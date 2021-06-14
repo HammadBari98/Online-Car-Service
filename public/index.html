@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/js/all.js">
     <link href="service.css" rel="stylesheet">
+
    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   
 <script>
     $(document).ready(function(){
         $(".slide-up").click(function(){
@@ -22,8 +26,61 @@
         });
     });
 </script>
+<script>
+       
+          $(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+
+});
+        </script>
+   <style>
+
+ .dropdown {
+     position: static !important;
+ }
+ 
+ .dropdown-menu {
+     border: 0px;
+     margin-top: 0px !important;
+     width: 100% !important;
+ }
+ @media only screen and (max-width:768px)
+ {        
+ .navbar{
+ background-color: #fff !important;
+}   
+ .dropdown-item {
+     font-size: 12px !important;
+     padding: 5px;
+
+ }
+ a.nav-link{
+  color: black !important;
+ }
+ }
+ 
+</style>
+       <style>
+       
+
+         .tor{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius:8px ;
+  background-color:white;
+  color: #000;
+  line-height: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
         
-        <style>
+
+         .mar:hover{
+          box-shadow: 0 0 10px black, 0 0 40px black, 0 0 80px black;
+         transition: 1s;
+         }
+         .mar{
+           font-family:'cooper';
+         }
+
           .color a{
             color:forestgreen !important;
             text-decoration: none !important;
@@ -89,7 +146,25 @@
 
 
 
-/* Popup */
+/* Onloead Modal */
+@media only screen and (min-width:768px){
+  #boxes .window {
+    width: 60% !important;
+}
+}
+@media only screen and (max-width:535px){
+  #boxes .window {
+    width: auto !important;
+    
+}
+  .dBox{
+   width: 100% !important; 
+  }
+  .nav-link{
+    
+    text-align: left !important;
+  }
+}
 #mask {
   position:fixed;
   left:0;
@@ -103,7 +178,7 @@
   left:0;
   top:0;
   width:440px;
-  height:100vh;
+  height: auto;
   display:none;
   z-index:9999;
   padding:20px;
@@ -112,7 +187,7 @@
 }
 #boxes #dialog {
   width:450px; 
-  height:50vh;
+  height:auto;
   padding:10px;
   background-color:#ffffff;
   font-family: 'Segoe UI Light', sans-serif;
@@ -123,9 +198,7 @@
   font-family: "Segoe UI", sans-serif;
   text-decoration: none;
 }
-body{
-  background: url('bg.jpg');
-}
+
 #lorem{
 	font-family: "Segoe UI", sans-serif;
 	font-size: 12pt;
@@ -150,6 +223,55 @@ body{
 	
 	color: red;
 }
+.responce:hover {
+color:white;
+border-radius: 40px;
+box-shadow: 0 0 10px limegreen, 0 0 40px  lightgreen,0 0 80px limegreen;
+
+     
+  
+}
+.responce {
+  margin-right: auto;
+   font-weight:bolder;
+   line-height:50px;
+  border-radius: 8px;
+    color:#244b67;
+    background-color:#36f182;
+    text-transform: uppercase;
+       font-family:'Russo One';
+        width: 200px;
+       cursor: pointer; transition: 1s;
+}
+.rr{
+  
+  font-weight:bolder;
+   line-height:50px;
+ border-radius: 8px;
+    color:#244b67;
+    background-color:#36f182;
+    text-transform: uppercase;
+       font-family:'Russo One';
+       width: 200px;
+      
+       cursor: pointer; transition: 1s;
+}
+.rr:hover{
+  
+  color:white;
+border-radius: 40px;
+box-shadow: 0 0 10px limegreen, 0 0 40px  lightgreen,0 0 80px limegreen;
+}
+.inp{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color:#fff;
+  color: #000;
+  font-size: 30px;
+  line-height: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 @media only screen and (max-width:768px){
  .heading{
    margin-left: auto;
@@ -172,6 +294,18 @@ body{
  .mar{
    margin-bottom: 5%;
  }
+ #carouselExampleControls{
+   display: none;
+ }
+ #muzan{
+   display: block !important;
+ }
+ .rr{
+   margin-top: 10px;
+   margin-right: auto;
+   margin-left: auto;
+ }
+
 }
 @media only screen and (width:768px)
 {
@@ -190,159 +324,263 @@ body{
   }
   
 }
-@media only screen and (max-width:330px)
+@media only screen and (max-width:370px)
 {
-  .rr{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
-  }
   .tor{
     width: 80%;
-  }
 
-}
-@media only screen and (max-width:632px){
-.hs{
-    margin-top: 70px !important;
   }
-}
   
+  .mar{
+    text-align: center;
 
+  }
+
+}
+.navbar.scrolled {
+  background-color: #fff!important;
+  
+}
+ .nav-link.scrolled{
+  color: black !important;
+  
+ }
+a.nav-link.scroll-on{
+  color: limegreen !important;
+ }
 </style>
-    
-          
-    <script>$(document).ready(function(){       
-      $('#myModal').modal('show');
-       }); </script>
+ 
 </head>
-<body>
-  <!-- Modal -->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div> --><br>
-        <div class="modal-body">
-          <div class="container" style="width: 70%;">
-          <h1> <img src="imgs/logo.png" width="100px" alt=""> </h1>
-          
-          <label>Enter your car make</label>
-          <input type="text" class="form-control" placeholder="car make">
-          <label>Enter your car modal</label>
-          <input type="text" class="form-control" placeholder="car modal">
-          <br>
+<body  style=" background-image: url(images/background.png);  background-repeat: no-repeat;">
+  <div id="boxes">
+    <div id="dialog" class="window"> <img src="logo.png" style="width: 80px;" alt="">
+      <a href="#" class="close agree">x</a>
+      <div id="popupfoot">
+        <div class="container dBox"  style="width: 60%;">
+          <h5 style="text-align: left;">Enter Make</h5>
+          <input type="text" class="form-control" placeholder="enter your car make..">
+          <h5 style="text-align: left; margin-top: 10px;">Enter Model</h5> 
+          <input type="text" class="form-control" placeholder="enter your car model.."><br>
           <button class="btn btn-success" style="width: 100%;">Enter</button>
         </div>
       </div>
-        <div class="modal-footer">
-          <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
-      </div>
-  
     </div>
+    <div id="mask"></div>
   </div>
-<div class="navigation-wrap bg-light start-header start-style">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-md navbar-light">
+  <div class="fluid-container">
+    
+    <center>
+        
+        <nav class="navbar navbar-expand-lg navbar-tra
+                    justify-content-between text-white fixed-top"
+            style="background: transparent;">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png"
+                    width="90" height="70"
+                    class="d-inline-block align-top" alt="">
+            
+            </a>
+            <button class="navbar-toggler "
+                    type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown01"
+                    aria-controls="navbarNavDropdown01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="outline-color:#244b67 !important;">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true" style="color: #244b67;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNavDropdown01">
+<ul class="navbar-nav mr-auto"> </ul>
+                <ul class="navbar-nav ">
+                    
+                    <!--dropdown item of menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false" class="menulink">
+                         <b>Find Garages</b>
+                        </a>
+                        
+                        <!--dropdown sub items of menu-->
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <div class="container">
+                              <h5> Best Garages For</h5>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3" style="display: flex;">
+                                   
+                                   <a class="dropdown-item" href="mobileMechanic.html">
+                                    <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;Mobile Mechanic
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="cambeltChange.html"> <img src="imgs/AllService/cambelt.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Cambelt Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="brake&Disc.html"> <img src="imgs/AllService/brake-pads-discs.svg" width="22px" alt="">
+
+                                    &nbsp;&nbsp;
+                                    Brake Pads and Discs
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Aircon.html"> <img src="imgs/AllService/icon-heatingCooling.svg"width="22px">
+                                     &nbsp;&nbsp;
+                                    Aircon Regas
+                                   </a> 
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="Diagnostic.html"> <img src="imgs/AllService/icon-diagnostics.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Diagnostics
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="fullService.html"> <img src="imgs/AllService/full-service-icon.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Full Service
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="OilChnage.html"> <img src="imgs/AllService/oil-change.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Oil Change
+                                   </a> 
+                                </div>
+                                 <div class="col-12 col-sm-12 col-md-3">
+                                   <a class="dropdown-item" href="MobileTyreFitting.html"> <img src="imgs/AllService/mobile-mechanic.svg" width="22px" alt="">
+
+                                     &nbsp;&nbsp;
+                                    Mobile Tyre Fitting
+                                   </a> 
+                                </div>
+                            </div>
+                             
+                             
+                           <br> <a href="allService.html"> <h6 style="font-weight: 700; color: #244b67;">View All Repairs</h6></a>
+                            </div>
+                            
+                           
+                        </div>
+                    </li>
+                    <li> <a class="nav-link"
+                      href="forGarages.html" class="menulink" >
+                       <b>For Garages</b>
+                      </a>
+                  </li>
+                    <li> <a class="nav-link"
+                        href="How it works.html" class="menulink" >
+                         <b>How It Works</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="signUp.html" class="menulink" >
+                         <b>Sign Up</b>
+                        </a>
+                    </li>
+                    <li> <a class="nav-link"
+                        href="login.html" class="menulink" >
+                         <b>Log In</b>
+                        </a>
+                    </li>
+                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="login.html">
+                            <button type="button" class="btn btn-primary">Retrieve Quotes</button>
+                            </a>
+                        </li>
+                    
+                </ul>
                 
-                    <a class="navbar-brand" href="index.html" target="_blank"><img src="logo.png" style="width: 90px !important; height: 70px !important;" alt=""></a> 
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="allService.html">Find Garage</a>
-                            </li>
-                                                        
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="How it works.html">How It Works</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="forGarages.html">For Garages
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="signUp.html">Sign up
-                                </a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">Log In</a>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link" href="login.html">
-                                <button type="button" class="btn btn-outline-dark">Retrieve Quotes</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </nav>      
+            
             </div>
-        </div>
+        </nav>
+    </center>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+
+  </div>
 </div>
 
 
 
-<br><br>
-<div class="container-fluid " style=" background-image: url(images/background.png);  background-size: cover; background-repeat: no-repeat;">
-    <div class="row hs"> 
-      <h1  class="heading" style="color:	chartreuse; margin-top:10%; margin-left: auto; font-weight: bolder;" >Car  repairs</h1>
+
+<div class="container-fluid"  style="background: transparent; height: 890px;" >
+    <div class="row "> 
+      <h1  class="heading" style="color:	chartreuse; margin-top:10%; margin-left: auto; font-weight: bolder;" >Car  Repairs</h1>
       <h1 class="change" style="margin-top:10%;"></h1>
-      <h1 class="heading" style="margin-top:10%; color:#fff; margin-right: auto; font-weight: bolder;">You Can Trust</h1>
+      <h1 class="heading" style="margin-top:10%; color:#fff; margin-right: auto; font-weight: bolder;">&nbsp;You Can Trust</h1>
       </div>
       <div class="row" >
         <p style="color:#fff; margin-left: auto; margin-top:2% ; ">Compare, Book, Repair.</p>
         <p style="font-weight: bolder; color:#fff; margin-right: auto; margin-top: 2%;">Save.</p>
       </div>
       <div class="row" >
-        <span class="input-group-text north " style="color: yellow; background-color:blue; margin-left: auto;">GB</span>
-        <input class="inp" type="text" value="Enter Your Reg" style="margin-right:1%;">
-        <button class="btn responce" style="margin-right: auto; font-weight:bolder; color:darkblue; background-color: chartreuse;">
-          <a href="reqQuote.html">
-          Get Quotes</a></button>
+        <span class="input-group-text  " style=" margin-left: auto;  background-color: blue;"> <i class="fas fa-spinner" style="color: yellow;"></i></span>
+        <input class="inp" type="text" placeholder="Enter Your Reg" style="margin-right:1%;">
+        <button class="btn responce">Get Quotes</button>
       </div>
       <div class="container" style="margin-top:8%;">
         <div class="row" >
         <div class="col-md-3 col-sm-12 mar" style=" background-image: url(ll/mm.png); margin-left:auto;">
           <div class="row">
-          <h4 style="color: #fff; font-weight:bolder; margin: auto;">Save Money</h4>
+          <h4 style="color: #fff; font-weight:bolder; margin: auto; margin-bottom: 10px;">Save Money</h4>
             </div>
             <div class="row">
-              <h2 style="color: #fff; font-weight:bolder; margin: auto;">£77.89</h2>
+              <h2 style="color: #fff; font-weight:bolder; margin: auto; margin-bottom: 10px;">£77.89</h2>
             </div>
             <div class="row">
-              <p   style="color:#fff;  margin: auto; margin-bottom:0%;">Average driver saving</p>
+              <p   style="color:#fff;  margin: auto; margin-bottom:10px; ">Average driver saving</p>
             </div>            
         </div>
         <div class="col-md-3 col-sm-12 mx-3 mar" style=" background-image: url(ll/mm.png);">
           <div class="row">
-          <h4 style="color: #fff; font-weight:bolder; margin: auto;">Best Local Garages</h4>
+          <h4 style="color: #fff; font-weight:bolder; margin: auto; margin-bottom: 20px;">Best Local Garages</h4>
             </div>
             <div class="row">
-              <img src="star.PNG" style="margin: auto; width:50%; height:50%;">
+              <img src="https://www.whocanfixmycar.com/img/ratings-4halfstar.svg" style="margin: auto; width:50%; height:100%; margin-bottom:20px;">
             </div>
             <div class="row">
-              <p   style="color:#fff;  margin: auto;">'Excellent' - 4.6/5 Trustpilot rating</p>
+              <p   style="color:#fff;  margin: auto; margin-bottom:10px;">'Excellent' - 4.6/5 Trustpilot rating</p>
             </div>            
         </div>
         <div class="col-md-3 col-sm-12 mar" style=" background-image: url(ll/mm.png); margin-right: auto;">
           <div class="row">
-          <h4 style="color: #fff; font-weight:bolder; margin: auto;">The UK's #1</h4>
+          <h4 style="color: #fff; font-weight:bolder; margin: auto; margin-bottom: 10px;">The UK's #1</h4>
             </div>
             <div class="row">
-              <h3 style="color: #fff; font-weight:bolder; margin: auto;">Over 3 million</h3>
+              <h3 style="color: #fff; font-weight:bolder; margin: auto; margin-bottom: 10px;">Over 3 million</h3>
             </div>
             <div class="row">
-              <p   style="color:#fff;  margin: auto; margin-bottom:5%;">Drivers have trusted us already</p>
+              <p   style="color:#fff;  margin: auto;  margin-bottom: 10px;">Drivers have trusted us already</p>
             </div>            
         </div>
         </div>
@@ -350,10 +588,13 @@ body{
       </div>
       <br>
       </div>
+      
+      
 
   </div>
-  <div class="container-fluid text-center" style="background-color:#263139; ">
-    <br>
+
+  <div class="container-fluid text-center " style="background-color:#263139;">
+    
     
     <p  style="color:#fff;">As Seen In</p>
     <div class="container">
@@ -382,25 +623,85 @@ body{
     
 
   </div>
-    <div class="container text-center">
+    <div class="container-fluid text-center">
       <h1 style="margin-top:3%;">How Does It Work?</h1>
       <p style="margin-top:3%; margin-bottom: 3%;">Find a great local garage in 4 easy steps.</p>
 
 
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" > 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="ll/imgs/enter your details.PNG" alt="First slide">
+            <div class="row text-center">
+            <div class="col-6 col-md-6 col-sm-auto">
+              <h1>
+                Enter Your Details
+              </h1><br>
+              <p style="font-family:'Artifakt Element';">
+              Tell us what you’re looking for or what needs fixing on your car and<br>
+               we’ll find the best garages nearby and give you the best price for<br>
+                the job.</p>
+                <br><br>
+            </div>
+                <div class="col-6 col-md-6 col-sm-auto">
+                  <img src="images/laptop.jpg"class="img-fluid">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            
+            <div class="row text-center" >
+              <div class="col-6 col-md-6 col-sm-auto">
+                <h1>
+                  Retrive Your Quotes
+                </h1><br>
+                <p style="font-family:'Artifakt Element'; ">
+                  Sit back and watch the quotes for your job start rolling in. We notify<br>
+                  all the garages in your area that your job is available so you can<br>
+                   make a cup of coffee whilst you wait.</p>
+                  <br><br>
+              </div>
+                  <div class="col-6 col-md-6 col-sm-auto">
+                    <img src="images/car.jpg" class="img-fluid">
+                  </div>
+              </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="ll/imgs/choose your garage.PNG" alt="Second slide">
+   
+            <div class="row text-center" >
+              <div class="col-6 col-md-6 col-sm-auto">
+                <h1>
+                  Choose Your Garage
+                </h1><br>
+                <p style="font-family:'Artifakt Element'; ">
+                  Once you have received your quotes from our specialist<br>
+                   mechanics, garages or dealerships it’s time for you to<br>
+                    select the
+                    quote that’s right for you.</p>
+                  <br><br>
+              </div>
+                  <div class="col-6 col-md-6 col-sm-auto">
+                    <img src="images/reviewslide.jpg" class="img-fluid">
+                  </div>
+              </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="ll/imgs/review your quotes.PNG" alt="Third slide">
+            <div class="carousel-item active">
+              <div class="row text-center">
+              <div class="col-6 col-md-6 col-sm-auto">
+                <h1>
+                  Leave a Review
+                </h1><br>
+                <p style="font-family:'Artifakt Element';">
+                  To show you’re happy, leave the garage a review and recommend<br>
+                   the garage to friends and others on WhoCanFixmycar.com.</p>
+                  <br><br>
+              </div>
+                  <div class="col-6 col-md-6 col-sm-auto">
+                    <img src="images/meachanic.jpg"class="img-fluid">
+                  </div>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="ll/imgs/leave a reviw.PNG" alt="Third slide">
-          </div>
+        </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -411,9 +712,63 @@ body{
           <span class="sr-only">Next</span>
         </a>
       </div>
+   
+    </div>
+  
+    <div class="container mx-auto text-center" style="display: none;" id="muzan">
+      <div class=" col-sm-12">
+    <div   style="background-color: #00b81f; color: #fff; height:30px; width: 30px; margin-left: auto; margin-right: auto; border-radius:20px; vertical-align: middle;"><h6>1</h6></div>
+
+    <h1>
+      Enter Your Details
+    </h1><br>
+    <p style="font-family:'Artifakt Element';">
+    Tell us what you’re looking for or what needs fixing on your car andwe’ll
+      find the best garages nearby and give you the best price for
+      the job.</p>
+      <br><br>
+
+      <div style="background-color: #00b81f; color: #fff; height:30px; width: 30px; margin-left: auto; margin-right: auto; border-radius:20px; vertical-align: middle;"><h6>2</h6></div>
+
+      <h1>
+        Retrive Your Quotes
+      </h1><br>
+      <p style="font-family:'Artifakt Element'; ">
+        Sit back and watch the quotes for your job start rolling in. We notify all
+        the garages in your area that your job is available so you can
+         make a cup of coffee whilst you wait.</p>
+        <br><br>
+
+        <div style="background-color: #00b81f; color: #fff; height:30px; width: 30px; margin-left: auto; margin-right: auto; border-radius:20px; vertical-align: middle;"><h6>3</h6></div>
+
+        <h1>
+          Choose Your Garage
+        </h1><br>
+        <p style="font-family:'Artifakt Element'; ">
+          Once you have received your quotes from our specialist
+           mechanics, garages or dealerships it’s time for you to
+            select the
+            quote that’s right for you.</p>
+          <br><br>
+
+          <div style="background-color: #00b81f; color: #fff; height:30px; width: 30px; margin-left: auto; margin-right: auto; border-radius:20px; vertical-align: middle;"><h6>4</h6></div>
+
+          <h1>
+            Leave a Review
+          </h1><br>
+          <p style="font-family:'Artifakt Element';">
+            To show you’re happy, leave the garage a review and recommend
+             the garage to friends and others on WhoCanFixmycar.com.</p>
+            <br><br>
+    </div>
+    </div>
+    <div class="container-fluid text-center">
+      
       <p class="my-5">Are you a garage, dealership or mechanic and interested in becoming a member?</p>
-              
-      <buttton class="btn" id="find"">Find Out More</buttton>
+              <a href="forGarages.html">
+      <buttton class="btn" id="find"">Find Out More</buttton></a>
+      </div>
+
     </div>
     <div class="container-fluid text-center" style="background-color:#e8f2f8;">
       <h1 style="font-weight: bolder; margin-bottom:3%;">Latest Reviews</h1>
@@ -425,13 +780,81 @@ body{
       <div id="carousel2" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100 mx-auto"  src="ll/imgs/slide1.png" alt="First slide">
+            <div class="container" style="margin-left:30;">
+              <p style="margin-left: 80%;">11:07</p>
+            <div class="row">
+   
+              <i class="fa fa-star" aria-hidden="true" style="color:yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color:yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <h6 style="font-family: 'cooper';">Flat Tipo Full Service and MOTS</h6>
+            </div>
+            <div class="row">
+              <p>Excellent  service, I'll definitly use it again</p>
+            
+            </div>
+            <div class="row">
+            <img src="images/REVIEW1.jpg"  class="rounded-circle" style="width: 50px; height:50px; border:2px solid lime; ">
+            <DIV class="col-md-2 col-2 col-sm-auto">
+             <p style="font-family:'Franklin Gothic','Cond Medium';">Sylwester recomends<br>
+             <b>Niche Autos LTD</b></p>
+             </DIV>
+            </div>
+            </div>
+          </div>
+   
+          <div class="carousel-item">
+            <div class="container" style="margin-left:30;">
+              <p style="margin-left: 80%;">11:07</p>
+            <div class="row">
+   
+              <i class="fa fa-star" aria-hidden="true" style="color:yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color:yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <h6 style="font-family: 'cooper';"> BMW-1 Series Break Fluid Change</h6>
+            </div>
+            <div class="row">
+              <p>Excellent  Price and Service We will definitly be using it again</p>
+            
+            </div>
+            <div class="row">
+            <img src="images/REVIEW3.jpg"  class="rounded-circle" style="width: 50px; height:50px; border:2px solid lime; ">
+            <DIV class="col-md-2 col-2 col-sm-1">
+             <p style="font-family:'Franklin Gothic','Cond Medium';">Stephen recomends<br>
+             <b>Ewood Motor Service</b></p>
+             </DIV>
+            </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 mx-auto"  src="ll/imgs/slide2.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 "  src="ll/imgs/slide3_1.png" alt="Third slide">
+            <div class="container" style="margin-left:30;">
+              <p style="margin-left: 80%;">11:07</p>
+            <div class="row">
+   
+              <i class="fa fa-star" aria-hidden="true" style="color:yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color:yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
+              <h6 style="font-family: 'cooper';">Honda Jazz-Go Compare $10 MOT</h6>
+            </div>
+            <div class="row">
+              <p>Observed a robust and fair MoT at a Go Compare discounted price. Staff helpful and friendly. Would recommend. </p>
+            
+            </div>
+            <div class="row col-md-4 col-sm-1">
+            <img src="images/review2.jpg"  class="rounded-circle" style="width: 50px; height:50px; border:2px solid lime; ">
+            <p style="font-family:'Franklin Gothic','Cond Medium';">
+              Steve recomends<br>
+              <b>Hallfords Autocenter </b></p>
+         
+             
+            </div>
+            </div>
           </div>
          
         </div>
@@ -448,28 +871,38 @@ body{
         
       </div>
     </div>
-    <div class="container-fluid" style="background-color:#263139;">
-      <div class="container text-center">
-        
-      <h1 style="color:#fff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  margin-bottom:5% ;">Happy Drivers Every Week</h1>
-      <p style="color: #fff; margin-bottom: 0px;">Take a look at these helpful videos.</p>
+    <div class="container-fluid" style="padding: 20px; width: 100% !important;background-color: rgb(48, 48, 48);">
+      <h1 style="text-align: center; font-weight: 700; color: white">Happy Drivers Every Week</h1><br>
+      <p style="text-align: center; color: white">Take a look at these helpful videos.</p><br>
+      <div class="row" style="display: flex; justify-content: space-between; ">
+        <div class="col-12 col-md-1 col-lg-1"></div>
+        <div class="col-12 col-md-5 col-lg-5">
+          <div class="banner">
+            <div class="content">
+              <img src="ll/imgs/tumnail1.jpg" style="width: 90%" onclick="vid1();">
+            </div>
+          </div>
       
-        <div class="row ">
-          <div class="col-md-6 col-sm-12">
-            <video controls poster="ll/imgs/tumnail1.jpg" height="400px" width="100%">
-              <source src="ll/imgs/How_does_WhoCanFixMyCar.com_work.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <video controls poster="ll/imgs/thumnail2.jpg" height="400px" width="100%">
-              <source src="ll/imgs/Whoever,_wherever,_WhoCanFixMyCar.com_can_help.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <br><br>
+            <div class="trailer">
+              <video src="ll/imgs/How_does_WhoCanFixMyCar.com_work.mp4" controls="true" class="vid1"></video>
+              <img src="ll/imgs/close.png" class="close" onclick="vid1();">
+            </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-5">
+              <div class="banner">
+                <div class="content">
+                  <img src="ll/imgs/thumnail2.jpg" style="width: 90%" onclick="vid2();">
+                </div>
+              </div>
+          
+                <div class="trailer2">
+                  <video src="ll/imgs/Whoever,_wherever,_WhoCanFixMyCar.com_can_help.mp4" controls="true" class="vid2"></video>
+                  <img src="ll/imgs/close.png" class="close2" onclick="vid2();">
+                </div>
+                </div>
+           <div class="col-12 col-md-1 col-lg-1"></div>
       </div>
+    </div>
     </div>
     <div class="container-fluid" style="background-color: #17a8bf;">
 <br>
@@ -517,10 +950,10 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
         <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab" style="color: black !important; margin-left:10px">Top locations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" style="color: black !important; margin-left:10px">Top jobs</a>
+        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" style="color: black !important; margin-left:10px">Top makes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" style="color: black !important; margin-left:10px">Top makes</a>
+        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" style="color: black !important; margin-left:10px">Top jobs</a>
       </li>
     </ul><!-- Tab panes -->
     <div class="tab-content">
@@ -529,58 +962,58 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
             
             <div class="row" style="font-size: 14px;">
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Newcastle upon Tyne</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Newcastle upon Tyne</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Manchester</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Manchester</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Birmingham</a><br><br>
-                </div>
-            </div>
-            <div class="row"style="font-size: 14px;">
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Cardiff</a><br><br>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Glasgow</a><br><br>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Liverpool</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Birmingham</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Coventry</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Leeds</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Derby</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Cardiff</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Nottingham</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Glasgow</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Edinburgh</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Liverpool</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Belfast</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Coventry</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Bristol</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Derby</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Oxford</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Nottingham</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mobile Mechanic in Leicester</a><br><br>
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Edinburgh</a><br><br>
+                </div>
+            </div>
+            <div class="row"style="font-size: 14px;">
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Belfast</a><br><br>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Bristol</a><br><br>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Oxford</a><br><br>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="LocLondon.html" style="color: #00b81f;">Mobile Mechanic in Leicester</a><br><br>
                 </div>
             </div>
       </div>
@@ -589,49 +1022,49 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
             <div class="row" style="font-size: 14px;">
                 
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Vauxhall Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Vauxhall Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Ford Mobile Mechanic
+                    <a href="topMakes.html" style="color: #00b81f;">Ford Mobile Mechanic
                     </a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Volkswagen Mobile Mechanic
+                    <a href="topMakes.html" style="color: #00b81f;">Volkswagen Mobile Mechanic
                     </a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">BMW Mobile Mechanic
+                    <a href="topMakes.html" style="color: #00b81f;">BMW Mobile Mechanic
                     </a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
                 
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Audi Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Audi Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                   <a href="#" style="color: #00b81f;">Peugeot Mobile Mechanic</a><br><br>
+                   <a href="topMakes.html" style="color: #00b81f;">Peugeot Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Mercedes Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Mercedes Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Renault Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Renault Mobile Mechanic</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">            
                 
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Nissan Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Nissan Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Citroen Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Citroen Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Toyota Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Toyota Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Honda Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Honda Mobile Mechanic</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
@@ -639,31 +1072,31 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
     
     
                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">  MINI Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">  MINI Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Fiat Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Fiat Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Hyundai Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">Hyundai Mobile Mechanic</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">SEAT Mobile Mechanic</a><br><br>
+                    <a href="topMakes.html" style="color: #00b81f;">SEAT Mobile Mechanic</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
                 
                 <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;"> Land Rover Mobile Mechanic</a><br><br>
+                     <a href="topMakes.html" style="color: #00b81f;"> Land Rover Mobile Mechanic</a><br><br>
                  </div>
                  <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;">Skoda Mobile Mechanic</a><br><br>
+                     <a href="topMakes.html" style="color: #00b81f;">Skoda Mobile Mechanic</a><br><br>
                  </div>
                  <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;">Kia Mobile Mechanic</a><br><br>
+                     <a href="topMakes.html" style="color: #00b81f;">Kia Mobile Mechanic</a><br><br>
                  </div>
                  <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;">Mazda Mobile Mechanic</a><br><br>
+                     <a href="topMakes.html" style="color: #00b81f;">Mazda Mobile Mechanic</a><br><br>
                  </div>
              </div>
       </div>
@@ -671,77 +1104,77 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
         <!-- <p>Second Panel</p> -->
             <div class="row" style="font-size: 14px;">
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Full Service</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Full Service</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Clutch Replacement</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Clutch Replacement</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">MOT</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">MOT</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Full Service and MOT</a><br><br>
-                </div>
-            </div>
-            <div class="row"style="font-size: 14px;">
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Oil Change</a><br><br>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3">
-                   <a href="#" style="color: #00b81f;">Aircon Regas</a><br><br>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Interim Service</a><br><br>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Timing Chain</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Full Service and MOT</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
-                
-                
-                
-                
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Puncture Repair</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Oil Change</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Windscreen Replacement</a><br><br>
+                   <a href="allService.html" style="color: #00b81f;">Aircon Regas</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Alternator Repair</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Interim Service</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Exhaust Repair</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Timing Chain</a><br><br>
+                </div>
+            </div>
+            <div class="row"style="font-size: 14px;">
+                
+                
+                
+                
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="allService.html" style="color: #00b81f;">Puncture Repair</a><br><br>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="allService.html" style="color: #00b81f;">Windscreen Replacement</a><br><br>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="allService.html" style="color: #00b81f;">Alternator Repair</a><br><br>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <a href="allService.html" style="color: #00b81f;">Exhaust Repair</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
                 
                <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Diesel Particulate Filter Clean</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Diesel Particulate Filter Clean</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Electrical Faults</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Electrical Faults</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Front Wheel Alignment</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Front Wheel Alignment</a><br><br>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                    <a href="#" style="color: #00b81f;">Turbo Faults and Replacement</a><br><br>
+                    <a href="allService.html" style="color: #00b81f;">Turbo Faults and Replacement</a><br><br>
                 </div>
             </div>
             <div class="row"style="font-size: 14px;">
                 <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;"> Parking Sensors</a><br><br>
+                     <a href="allService.html" style="color: #00b81f;"> Parking Sensors</a><br><br>
                  </div>
                  <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;">Interim Service and MOT</a><br><br>
+                     <a href="allService.html" style="color: #00b81f;">Interim Service and MOT</a><br><br>
                  </div>
                  <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;">Shock Absorber Repair</a><br><br>
+                     <a href="allService.html" style="color: #00b81f;">Shock Absorber Repair</a><br><br>
                  </div>
                  <div class="col-12 col-sm-12 col-md-3">
-                     <a href="#" style="color: #00b81f;">Pre-Purchase Car Inspection</a><br><br>
+                     <a href="allService.html" style="color: #00b81f;">Pre-Purchase Car Inspection</a><br><br>
                  </div>
              </div>
         </div>
@@ -756,9 +1189,9 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
     <br>
     <br>
     <div class="row" >
-    <span class="input-group-text " style="color: yellow; background-color:blue; margin-left:auto;" >GB</span>
-    <input class="tor" type="text" value="Enter Your Reg" style="margin-right:1%;">
-    <button class="btn rr" style="margin-right: auto; font-weight:bolder; color:darkblue; background-color: chartreuse; margin-right: auto;">Get Quotes</button>
+    <span class="input-group-text " style=" background-color:blue; margin-left:auto;" >  <i class="fas fa-spinner" style="color: yellow;"></i></span>
+    <input class="tor " type="text" value="Enter Your Reg" style="margin-right:1%;">
+    <button class="btn rr" style="margin-right: auto; font-weight:bolder;">Get Quotes</button>
     </div>
     <br><br>
   </div>
@@ -837,7 +1270,7 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
                 <p>  <a href="#" style="text-decoration: none; color: #A7D9EE;">Otto's Mechanics </a> </p></div>
             <div class="col-12 col-sm-12 col-md-4"style="text-align:center">
                 <a href="index.html">
-                <img src="imgs/footerlogo.png" width="55px" alt="">
+                <img src="imgs/logo.png" width="55px" alt="">
                 </a>
             </div>
             <div class="col-12 col-sm-12 col-md-4" style="text-align: center;" >
@@ -853,7 +1286,24 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
             
 </footer>
 
+<script type="text/javascript">
+  function vid1(){
+    var trailer= document.querySelector(".trailer")
+     var video= document.querySelector(".vid1")
+    trailer.classList.toggle("active");
+    video.pause();
+    video.currenTime=0;
     
+  }
+  function vid2(){
+    var trailer2= document.querySelector(".trailer2")
+     var video2= document.querySelector(".vid2")
+    trailer2.classList.toggle("active");
+    video2.pause();
+    video2.currenTime=0;
+  }
+</script>
+
     <!-- <script> //Script for FAQ
         function myFunction() {
             var dots = document.getElementById("dots");
@@ -870,56 +1320,7 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
                 moreText.style.display = "inline";
             }
     } -->
-    <script>
-        
     
-        (function($) { "use strict";
-        
-        $(function() {
-            var header = $(".start-style");
-            $(window).scroll(function() {    
-                var scroll = $(window).scrollTop();
-            
-                if (scroll >= 10) {
-                    header.removeClass('start-style').addClass("scroll-on");
-                } else {
-                    header.removeClass("scroll-on").addClass('start-style');
-                }
-            });
-        });		
-            
-        //Animation
-        
-        $(document).ready(function() {
-            $('body.hero-anime').removeClass('hero-anime');
-        });
-        
-        //Menu On Hover
-            
-        $('body').on('mouseenter mouseleave','.nav-item',function(e){
-                if ($(window).width() > 750) {
-                    var _d=$(e.target).closest('.nav-item');_d.addClass('show');
-                    setTimeout(function(){
-                    _d[_d.is(':hover')?'addClass':'removeClass']('show');
-                    },1);
-                }
-        });	
-        
-        //Switch light/dark
-        
-        $("#switch").on('click', function () {
-            if ($("body").hasClass("dark")) {
-                $("body").removeClass("dark");
-                $("#switch").removeClass("switched");
-            }
-            else {
-                $("body").addClass("dark");
-                $("#switch").addClass("switched");
-            }
-        });  
-        
-        })(jQuery); 
-        </script>
         <script>
             $(document).ready(function() {
          // executes when HTML-Document is loaded and DOM is ready
@@ -994,7 +1395,7 @@ friendly, well-priced local garage? That’s what we do! <b><u>Click here to get
     
     
         </script>
-        
+      
 <script>
     
     
@@ -1068,16 +1469,103 @@ $(window).resize(function(){
         // do something here
     }   
 });  
+  
+  
+
 // document ready  
 });
 </script>
-<script src="jquery.js">
-  
-</script>
+<script src="jquery.js"></script>
 
+
+<script>$(document).ready(function() { 
+    02
+     
+    03
+    var id ='#dialog';
+    04
+       
+    05
+    //Get the screen height and width
+    06
+    var maskHeight = $(document).height();
+    07
+    var maskWidth = $(window).width();
+    08
+       
+    09
+    //Set heigth and width to mask to fill up the whole screen
+    10
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    11
+     
+    12
+    //transition effect
+    13
+    $('#mask').fadeIn(500);
+    14
+    $('#mask').fadeTo("slow",0.9); 
+    15
+       
+    16
+    //Get the window height and width
+    17
+    var winH = $(window).height();
+    18
+    var winW = $(window).width();
+    19
+                   
+    20
+    //Set the popup window to center
+    21
+    $(id).css('top',  winH/2-$(id).height()/2);
+    22
+    $(id).css('left', winW/2-$(id).width()/2);
+    23
+       
+    24
+    //transition effect
+    25
+    $(id).fadeIn(2000);  
+    26
+       
+    27
+    //if close button is clicked
+    28
+    $('.window .close').click(function (e) {
+    29
+    //Cancel the link behavior
+    30
+    e.preventDefault();
+    31
+     
+    32
+    $('#mask').hide();
+    33
+    $('.window').hide();
+    34
+    });
+    35
+     
+    36
+    //if mask is clicked
+    37
+    $('#mask').click(function () {
+    38
+    $(this).hide();
+    39
+    $('.window').hide();
+    40
+    });
+    41
+       
+    42
+    });
+    </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="jquery.js"></script>
 </body>
 </html>
 </body>
